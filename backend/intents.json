@@ -1,0 +1,3623 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning"
+      ],
+      "responses": [
+        "Hello! How can I help you regarding your health?",
+        "Hi there! What brings you here?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you",
+        "Goodbye"
+      ],
+      "responses": [
+        "Stay healthy! Goodbye.",
+        "Take care!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help."
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "What can you do?",
+        "Help"
+      ],
+      "responses": [
+        "I can analyze symptoms, answer health questions, and help with appointments."
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "Who are you?",
+        "Are you human?"
+      ],
+      "responses": [
+        "I am an AI healthcare assistant."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke"
+      ],
+      "responses": [
+        "Why did the banana go to the doctor? It wasn't peeling well!"
+      ]
+    },
+    {
+      "tag": "mood_happy",
+      "patterns": [
+        "I am happy",
+        "Feeling good"
+      ],
+      "responses": [
+        "That's great! Mental well-being is important."
+      ]
+    },
+    {
+      "tag": "mood_sad",
+      "patterns": [
+        "I am sad",
+        "Feeling low"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Talking to a friend or professional might help."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather?"
+      ],
+      "responses": [
+        "I am a healthcare bot, unlikely to know the weather, but I can check if you have a cold!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?"
+      ],
+      "responses": [
+        "I am your HealthBot assistant."
+      ]
+    },
+    {
+      "tag": "dept_cardiology",
+      "patterns": [
+        "Cardiology department",
+        "Book Cardiology",
+        "Is Cardiology open?",
+        "I need a Cardiology doctor"
+      ],
+      "responses": [
+        "The Cardiology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Cardiology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_neurology",
+      "patterns": [
+        "Neurology department",
+        "Book Neurology",
+        "Is Neurology open?",
+        "I need a Neurology doctor"
+      ],
+      "responses": [
+        "The Neurology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Neurology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_orthopedics",
+      "patterns": [
+        "Orthopedics department",
+        "Book Orthopedics",
+        "Is Orthopedics open?",
+        "I need a Orthopedics doctor"
+      ],
+      "responses": [
+        "The Orthopedics department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Orthopedics via our reception."
+      ]
+    },
+    {
+      "tag": "dept_pediatrics",
+      "patterns": [
+        "Pediatrics department",
+        "Book Pediatrics",
+        "Is Pediatrics open?",
+        "I need a Pediatrics doctor"
+      ],
+      "responses": [
+        "The Pediatrics department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Pediatrics via our reception."
+      ]
+    },
+    {
+      "tag": "dept_dermatology",
+      "patterns": [
+        "Dermatology department",
+        "Book Dermatology",
+        "Is Dermatology open?",
+        "I need a Dermatology doctor"
+      ],
+      "responses": [
+        "The Dermatology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Dermatology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_gynecology",
+      "patterns": [
+        "Gynecology department",
+        "Book Gynecology",
+        "Is Gynecology open?",
+        "I need a Gynecology doctor"
+      ],
+      "responses": [
+        "The Gynecology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Gynecology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_oncology",
+      "patterns": [
+        "Oncology department",
+        "Book Oncology",
+        "Is Oncology open?",
+        "I need a Oncology doctor"
+      ],
+      "responses": [
+        "The Oncology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Oncology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_psychiatry",
+      "patterns": [
+        "Psychiatry department",
+        "Book Psychiatry",
+        "Is Psychiatry open?",
+        "I need a Psychiatry doctor"
+      ],
+      "responses": [
+        "The Psychiatry department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Psychiatry via our reception."
+      ]
+    },
+    {
+      "tag": "dept_urology",
+      "patterns": [
+        "Urology department",
+        "Book Urology",
+        "Is Urology open?",
+        "I need a Urology doctor"
+      ],
+      "responses": [
+        "The Urology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Urology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_ent",
+      "patterns": [
+        "ENT department",
+        "Book ENT",
+        "Is ENT open?",
+        "I need a ENT doctor"
+      ],
+      "responses": [
+        "The ENT department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for ENT via our reception."
+      ]
+    },
+    {
+      "tag": "dept_ophthalmology",
+      "patterns": [
+        "Ophthalmology department",
+        "Book Ophthalmology",
+        "Is Ophthalmology open?",
+        "I need a Ophthalmology doctor"
+      ],
+      "responses": [
+        "The Ophthalmology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Ophthalmology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_dental",
+      "patterns": [
+        "Dental department",
+        "Book Dental",
+        "Is Dental open?",
+        "I need a Dental doctor"
+      ],
+      "responses": [
+        "The Dental department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Dental via our reception."
+      ]
+    },
+    {
+      "tag": "dept_general_surgery",
+      "patterns": [
+        "General Surgery department",
+        "Book General Surgery",
+        "Is General Surgery open?",
+        "I need a General Surgery doctor"
+      ],
+      "responses": [
+        "The General Surgery department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for General Surgery via our reception."
+      ]
+    },
+    {
+      "tag": "dept_internal_medicine",
+      "patterns": [
+        "Internal Medicine department",
+        "Book Internal Medicine",
+        "Is Internal Medicine open?",
+        "I need a Internal Medicine doctor"
+      ],
+      "responses": [
+        "The Internal Medicine department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Internal Medicine via our reception."
+      ]
+    },
+    {
+      "tag": "dept_radiology",
+      "patterns": [
+        "Radiology department",
+        "Book Radiology",
+        "Is Radiology open?",
+        "I need a Radiology doctor"
+      ],
+      "responses": [
+        "The Radiology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Radiology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_pathology",
+      "patterns": [
+        "Pathology department",
+        "Book Pathology",
+        "Is Pathology open?",
+        "I need a Pathology doctor"
+      ],
+      "responses": [
+        "The Pathology department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Pathology via our reception."
+      ]
+    },
+    {
+      "tag": "dept_emergency",
+      "patterns": [
+        "Emergency department",
+        "Book Emergency",
+        "Is Emergency open?",
+        "I need a Emergency doctor"
+      ],
+      "responses": [
+        "The Emergency department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Emergency via our reception."
+      ]
+    },
+    {
+      "tag": "dept_pharmacy",
+      "patterns": [
+        "Pharmacy department",
+        "Book Pharmacy",
+        "Is Pharmacy open?",
+        "I need a Pharmacy doctor"
+      ],
+      "responses": [
+        "The Pharmacy department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Pharmacy via our reception."
+      ]
+    },
+    {
+      "tag": "dept_physiotherapy",
+      "patterns": [
+        "Physiotherapy department",
+        "Book Physiotherapy",
+        "Is Physiotherapy open?",
+        "I need a Physiotherapy doctor"
+      ],
+      "responses": [
+        "The Physiotherapy department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Physiotherapy via our reception."
+      ]
+    },
+    {
+      "tag": "dept_nutrition",
+      "patterns": [
+        "Nutrition department",
+        "Book Nutrition",
+        "Is Nutrition open?",
+        "I need a Nutrition doctor"
+      ],
+      "responses": [
+        "The Nutrition department is on the 2nd floor. Open 9 AM - 5 PM.",
+        "You can book an appointment for Nutrition via our reception."
+      ]
+    },
+    {
+      "tag": "flu",
+      "patterns": [
+        "I have Flu",
+        "Symptoms of Flu",
+        "Think I have Flu",
+        "Treatment for Flu",
+        "What to do for Flu",
+        "start of flu",
+        "flu symptoms",
+        "body ache and fever"
+      ],
+      "responses": [
+        "**Possible Condition:** Flu\n\n**Suggested Treatment:** Rest, fluids, and antipyretics.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Flu. \n\n**Treatment:** Rest, fluids, and antipyretics.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Flu. \n\n**Remedy:** Rest, fluids, and antipyretics.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "common_cold",
+      "patterns": [
+        "I have Common Cold",
+        "Symptoms of Common Cold",
+        "Think I have Common Cold",
+        "Treatment for Common Cold",
+        "What to do for Common Cold",
+        "runny nose",
+        "sneezing",
+        "cold symptoms"
+      ],
+      "responses": [
+        "**Possible Condition:** Common Cold\n\n**Suggested Treatment:** Stay hydrated, rest, and take vitamin C.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Common Cold. \n\n**Treatment:** Stay hydrated, rest, and take vitamin C.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Common Cold. \n\n**Remedy:** Stay hydrated, rest, and take vitamin C.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "covid_19",
+      "patterns": [
+        "I have COVID-19",
+        "Symptoms of COVID-19",
+        "Think I have COVID-19",
+        "Treatment for COVID-19",
+        "What to do for COVID-19",
+        "loss of taste",
+        "covid symptoms",
+        "high fever and dry cough"
+      ],
+      "responses": [
+        "**Possible Condition:** COVID-19\n\n**Suggested Treatment:** Isolate yourself and get tested.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be COVID-19. \n\n**Treatment:** Isolate yourself and get tested.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing COVID-19. \n\n**Remedy:** Isolate yourself and get tested.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "migraine",
+      "patterns": [
+        "I have Migraine",
+        "Symptoms of Migraine",
+        "Think I have Migraine",
+        "Treatment for Migraine",
+        "What to do for Migraine",
+        "one sided headache",
+        "migraine aura",
+        "severe headache"
+      ],
+      "responses": [
+        "**Possible Condition:** Migraine\n\n**Suggested Treatment:** Rest in a dark room. Take prescribed meds if any.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Migraine. \n\n**Treatment:** Rest in a dark room. Take prescribed meds if any.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Migraine. \n\n**Remedy:** Rest in a dark room. Take prescribed meds if any.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hypertension",
+      "patterns": [
+        "I have Hypertension",
+        "Symptoms of Hypertension",
+        "Think I have Hypertension",
+        "Treatment for Hypertension",
+        "What to do for Hypertension",
+        "high blood pressure",
+        "dizziness and bp",
+        "hypertension symptoms"
+      ],
+      "responses": [
+        "**Possible Condition:** Hypertension\n\n**Suggested Treatment:** Reduce salt, manage stress, and see a doctor.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hypertension. \n\n**Treatment:** Reduce salt, manage stress, and see a doctor.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hypertension. \n\n**Remedy:** Reduce salt, manage stress, and see a doctor.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "diabetes",
+      "patterns": [
+        "I have Diabetes",
+        "Symptoms of Diabetes",
+        "Think I have Diabetes",
+        "Treatment for Diabetes",
+        "What to do for Diabetes",
+        "high blood sugar",
+        "excessive thirst",
+        "frequent urination"
+      ],
+      "responses": [
+        "**Possible Condition:** Diabetes\n\n**Suggested Treatment:** Monitor blood sugar, avoid sweets, and consult an endocrinologist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Diabetes. \n\n**Treatment:** Monitor blood sugar, avoid sweets, and consult an endocrinologist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Diabetes. \n\n**Remedy:** Monitor blood sugar, avoid sweets, and consult an endocrinologist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "asthma",
+      "patterns": [
+        "I have Asthma",
+        "Symptoms of Asthma",
+        "Think I have Asthma",
+        "Treatment for Asthma",
+        "What to do for Asthma",
+        "wheezing",
+        "shortness of breath",
+        "asthma attack"
+      ],
+      "responses": [
+        "**Possible Condition:** Asthma\n\n**Suggested Treatment:** Use your inhaler and sit upright. Seek help if it worsens.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Asthma. \n\n**Treatment:** Use your inhaler and sit upright. Seek help if it worsens.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Asthma. \n\n**Remedy:** Use your inhaler and sit upright. Seek help if it worsens.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "gastritis",
+      "patterns": [
+        "I have Gastritis",
+        "Symptoms of Gastritis",
+        "Think I have Gastritis",
+        "Treatment for Gastritis",
+        "What to do for Gastritis",
+        "burning stomach",
+        "acidity",
+        "gastric pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Gastritis\n\n**Suggested Treatment:** Avoid spicy food, eat small meals, and stay hydrated.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Gastritis. \n\n**Treatment:** Avoid spicy food, eat small meals, and stay hydrated.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Gastritis. \n\n**Remedy:** Avoid spicy food, eat small meals, and stay hydrated.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "anemia",
+      "patterns": [
+        "I have Anemia",
+        "Symptoms of Anemia",
+        "Think I have Anemia",
+        "Treatment for Anemia",
+        "What to do for Anemia",
+        "fatigue",
+        "pale skin",
+        "weakness"
+      ],
+      "responses": [
+        "**Possible Condition:** Anemia\n\n**Suggested Treatment:** Eat iron-rich foods like spinach and meat. Consult a doctor.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Anemia. \n\n**Treatment:** Eat iron-rich foods like spinach and meat. Consult a doctor.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Anemia. \n\n**Remedy:** Eat iron-rich foods like spinach and meat. Consult a doctor.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "insomnia",
+      "patterns": [
+        "I have Insomnia",
+        "Symptoms of Insomnia",
+        "Think I have Insomnia",
+        "Treatment for Insomnia",
+        "What to do for Insomnia",
+        "can't sleep",
+        "trouble sleeping",
+        "insomnia"
+      ],
+      "responses": [
+        "**Possible Condition:** Insomnia\n\n**Suggested Treatment:** Maintain a sleep schedule, avoid caffeine, and reduce screen time.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Insomnia. \n\n**Treatment:** Maintain a sleep schedule, avoid caffeine, and reduce screen time.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Insomnia. \n\n**Remedy:** Maintain a sleep schedule, avoid caffeine, and reduce screen time.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "arthritis",
+      "patterns": [
+        "I have Arthritis",
+        "Symptoms of Arthritis",
+        "Think I have Arthritis",
+        "Treatment for Arthritis",
+        "What to do for Arthritis",
+        "joint pain",
+        "stiff joints",
+        "arthritis"
+      ],
+      "responses": [
+        "**Possible Condition:** Arthritis\n\n**Suggested Treatment:** Gentle exercise and anti-inflammatory medication can help.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Arthritis. \n\n**Treatment:** Gentle exercise and anti-inflammatory medication can help.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Arthritis. \n\n**Remedy:** Gentle exercise and anti-inflammatory medication can help.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "allergy",
+      "patterns": [
+        "I have Allergy",
+        "Symptoms of Allergy",
+        "Think I have Allergy",
+        "Treatment for Allergy",
+        "What to do for Allergy",
+        "itchy skin",
+        "allergic reaction",
+        "hives"
+      ],
+      "responses": [
+        "**Possible Condition:** Allergy\n\n**Suggested Treatment:** Identify the trigger and take an antihistamine.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Allergy. \n\n**Treatment:** Identify the trigger and take an antihistamine.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Allergy. \n\n**Remedy:** Identify the trigger and take an antihistamine.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "depression",
+      "patterns": [
+        "I have Depression",
+        "Symptoms of Depression",
+        "Think I have Depression",
+        "Treatment for Depression",
+        "What to do for Depression",
+        "feeling hopeless",
+        "loss of interest",
+        "depressed"
+      ],
+      "responses": [
+        "**Possible Condition:** Depression\n\n**Suggested Treatment:** Please reach out to a mental health professional or a trusted friend.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Depression. \n\n**Treatment:** Please reach out to a mental health professional or a trusted friend.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Depression. \n\n**Remedy:** Please reach out to a mental health professional or a trusted friend.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "anxiety",
+      "patterns": [
+        "I have Anxiety",
+        "Symptoms of Anxiety",
+        "Think I have Anxiety",
+        "Treatment for Anxiety",
+        "What to do for Anxiety",
+        "panic attack",
+        "anxious",
+        "nervousness"
+      ],
+      "responses": [
+        "**Possible Condition:** Anxiety\n\n**Suggested Treatment:** Try deep breathing exercises. Ground yourself in the present.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Anxiety. \n\n**Treatment:** Try deep breathing exercises. Ground yourself in the present.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Anxiety. \n\n**Remedy:** Try deep breathing exercises. Ground yourself in the present.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "acne",
+      "patterns": [
+        "I have Acne",
+        "Symptoms of Acne",
+        "Think I have Acne",
+        "Treatment for Acne",
+        "What to do for Acne",
+        "pimples",
+        "acne breakout",
+        "skin spots"
+      ],
+      "responses": [
+        "**Possible Condition:** Acne\n\n**Suggested Treatment:** Keep your face clean, avoid touching it, and use non-comedogenic products.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Acne. \n\n**Treatment:** Keep your face clean, avoid touching it, and use non-comedogenic products.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Acne. \n\n**Remedy:** Keep your face clean, avoid touching it, and use non-comedogenic products.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "eczema",
+      "patterns": [
+        "I have Eczema",
+        "Symptoms of Eczema",
+        "Think I have Eczema",
+        "Treatment for Eczema",
+        "What to do for Eczema",
+        "itchy dry skin",
+        "eczema flare",
+        "skin rash"
+      ],
+      "responses": [
+        "**Possible Condition:** Eczema\n\n**Suggested Treatment:** Moisturize frequently and avoid harsh soaps.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Eczema. \n\n**Treatment:** Moisturize frequently and avoid harsh soaps.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Eczema. \n\n**Remedy:** Moisturize frequently and avoid harsh soaps.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "conjunctivitis",
+      "patterns": [
+        "I have Conjunctivitis",
+        "Symptoms of Conjunctivitis",
+        "Think I have Conjunctivitis",
+        "Treatment for Conjunctivitis",
+        "What to do for Conjunctivitis",
+        "pink eye",
+        "itchy eyes",
+        "eye discharge"
+      ],
+      "responses": [
+        "**Possible Condition:** Conjunctivitis\n\n**Suggested Treatment:** Wash hands, avoid touching eyes, and see an ophthalmologist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Conjunctivitis. \n\n**Treatment:** Wash hands, avoid touching eyes, and see an ophthalmologist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Conjunctivitis. \n\n**Remedy:** Wash hands, avoid touching eyes, and see an ophthalmologist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "ear_infection",
+      "patterns": [
+        "I have Ear Infection",
+        "Symptoms of Ear Infection",
+        "Think I have Ear Infection",
+        "Treatment for Ear Infection",
+        "What to do for Ear Infection",
+        "ear pain",
+        "ear blockage",
+        "ear ache"
+      ],
+      "responses": [
+        "**Possible Condition:** Ear Infection\n\n**Suggested Treatment:** Keep ear dry. Consult a doctor for antibiotics if needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Ear Infection. \n\n**Treatment:** Keep ear dry. Consult a doctor for antibiotics if needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Ear Infection. \n\n**Remedy:** Keep ear dry. Consult a doctor for antibiotics if needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "sinusitis",
+      "patterns": [
+        "I have Sinusitis",
+        "Symptoms of Sinusitis",
+        "Think I have Sinusitis",
+        "Treatment for Sinusitis",
+        "What to do for Sinusitis",
+        "blocked nose",
+        "sinus pain",
+        "facial pressure"
+      ],
+      "responses": [
+        "**Possible Condition:** Sinusitis\n\n**Suggested Treatment:** Steam inhalation and saline sprays can provide relief.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Sinusitis. \n\n**Treatment:** Steam inhalation and saline sprays can provide relief.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Sinusitis. \n\n**Remedy:** Steam inhalation and saline sprays can provide relief.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "sore_throat",
+      "patterns": [
+        "I have Sore Throat",
+        "Symptoms of Sore Throat",
+        "Think I have Sore Throat",
+        "Treatment for Sore Throat",
+        "What to do for Sore Throat",
+        "throat pain",
+        "pain swallowing",
+        "scratchy throat"
+      ],
+      "responses": [
+        "**Possible Condition:** Sore Throat\n\n**Suggested Treatment:** Warm salt water gargle and honey can soothe it.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Sore Throat. \n\n**Treatment:** Warm salt water gargle and honey can soothe it.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Sore Throat. \n\n**Remedy:** Warm salt water gargle and honey can soothe it.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "dehydration",
+      "patterns": [
+        "I have Dehydration",
+        "Symptoms of Dehydration",
+        "Think I have Dehydration",
+        "Treatment for Dehydration",
+        "What to do for Dehydration",
+        "thirsty",
+        "dark urine",
+        "dry mouth"
+      ],
+      "responses": [
+        "**Possible Condition:** Dehydration\n\n**Suggested Treatment:** Drink clear fluids and oral rehydration salts.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Dehydration. \n\n**Treatment:** Drink clear fluids and oral rehydration salts.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Dehydration. \n\n**Remedy:** Drink clear fluids and oral rehydration salts.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "heat_stroke",
+      "patterns": [
+        "I have Heat Stroke",
+        "Symptoms of Heat Stroke",
+        "Think I have Heat Stroke",
+        "Treatment for Heat Stroke",
+        "What to do for Heat Stroke",
+        "high body temp",
+        "no sweating",
+        "heat exhaustion"
+      ],
+      "responses": [
+        "**Possible Condition:** Heat Stroke\n\n**Suggested Treatment:** Move to a cool place and cool the body down immediately.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Heat Stroke. \n\n**Treatment:** Move to a cool place and cool the body down immediately.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Heat Stroke. \n\n**Remedy:** Move to a cool place and cool the body down immediately.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "burn",
+      "patterns": [
+        "I have Burn",
+        "Symptoms of Burn",
+        "Think I have Burn",
+        "Treatment for Burn",
+        "What to do for Burn",
+        "skin burn",
+        "scald",
+        "blisters"
+      ],
+      "responses": [
+        "**Possible Condition:** Burn\n\n**Suggested Treatment:** Run cool water over the burn for 20 minutes. Do not pop blisters.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Burn. \n\n**Treatment:** Run cool water over the burn for 20 minutes. Do not pop blisters.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Burn. \n\n**Remedy:** Run cool water over the burn for 20 minutes. Do not pop blisters.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "cut",
+      "patterns": [
+        "I have Cut",
+        "Symptoms of Cut",
+        "Think I have Cut",
+        "Treatment for Cut",
+        "What to do for Cut",
+        "bleeding cut",
+        "open wound",
+        "laceration"
+      ],
+      "responses": [
+        "**Possible Condition:** Cut\n\n**Suggested Treatment:** Apply pressure to stop bleeding and clean with water.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Cut. \n\n**Treatment:** Apply pressure to stop bleeding and clean with water.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Cut. \n\n**Remedy:** Apply pressure to stop bleeding and clean with water.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "sprain",
+      "patterns": [
+        "I have Sprain",
+        "Symptoms of Sprain",
+        "Think I have Sprain",
+        "Treatment for Sprain",
+        "What to do for Sprain",
+        "twisted ankle",
+        "swollen joint",
+        "sprain"
+      ],
+      "responses": [
+        "**Possible Condition:** Sprain\n\n**Suggested Treatment:** R.I.C.E: Rest, Ice, Compression, Elevation.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Sprain. \n\n**Treatment:** R.I.C.E: Rest, Ice, Compression, Elevation.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Sprain. \n\n**Remedy:** R.I.C.E: Rest, Ice, Compression, Elevation.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "fracture",
+      "patterns": [
+        "I have Fracture",
+        "Symptoms of Fracture",
+        "Think I have Fracture",
+        "Treatment for Fracture",
+        "What to do for Fracture",
+        "broken bone",
+        "severe bone pain",
+        "deformity"
+      ],
+      "responses": [
+        "**Possible Condition:** Fracture\n\n**Suggested Treatment:** Immobilize the area and go to the ER immediately.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Fracture. \n\n**Treatment:** Immobilize the area and go to the ER immediately.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Fracture. \n\n**Remedy:** Immobilize the area and go to the ER immediately.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "food_poisoning",
+      "patterns": [
+        "I have Food Poisoning",
+        "Symptoms of Food Poisoning",
+        "Think I have Food Poisoning",
+        "Treatment for Food Poisoning",
+        "What to do for Food Poisoning",
+        "vomiting",
+        "bad stomach",
+        "ate bad food"
+      ],
+      "responses": [
+        "**Possible Condition:** Food Poisoning\n\n**Suggested Treatment:** Stay hydrated. Avoid solid food until vomiting stops.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Food Poisoning. \n\n**Treatment:** Stay hydrated. Avoid solid food until vomiting stops.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Food Poisoning. \n\n**Remedy:** Stay hydrated. Avoid solid food until vomiting stops.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "sunburn",
+      "patterns": [
+        "I have Sunburn",
+        "Symptoms of Sunburn",
+        "Think I have Sunburn",
+        "Treatment for Sunburn",
+        "What to do for Sunburn",
+        "red skin",
+        "sun burn",
+        "burning skin"
+      ],
+      "responses": [
+        "**Possible Condition:** Sunburn\n\n**Suggested Treatment:** Apply aloe vera and stay out of the sun.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Sunburn. \n\n**Treatment:** Apply aloe vera and stay out of the sun.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Sunburn. \n\n**Remedy:** Apply aloe vera and stay out of the sun.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "dandruff",
+      "patterns": [
+        "I have Dandruff",
+        "Symptoms of Dandruff",
+        "Think I have Dandruff",
+        "Treatment for Dandruff",
+        "What to do for Dandruff",
+        "flaky scalp",
+        "white flakes",
+        "dandruff"
+      ],
+      "responses": [
+        "**Possible Condition:** Dandruff\n\n**Suggested Treatment:** Use an anti-dandruff shampoo containing zinc pyrithione.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Dandruff. \n\n**Treatment:** Use an anti-dandruff shampoo containing zinc pyrithione.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Dandruff. \n\n**Remedy:** Use an anti-dandruff shampoo containing zinc pyrithione.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hair_loss",
+      "patterns": [
+        "I have Hair Loss",
+        "Symptoms of Hair Loss",
+        "Think I have Hair Loss",
+        "Treatment for Hair Loss",
+        "What to do for Hair Loss",
+        "losing hair",
+        "hair thinning",
+        "baldness"
+      ],
+      "responses": [
+        "**Possible Condition:** Hair Loss\n\n**Suggested Treatment:** Consult a dermatologist to find the cause.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hair Loss. \n\n**Treatment:** Consult a dermatologist to find the cause.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hair Loss. \n\n**Remedy:** Consult a dermatologist to find the cause.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "obesity",
+      "patterns": [
+        "I have Obesity",
+        "Symptoms of Obesity",
+        "Think I have Obesity",
+        "Treatment for Obesity",
+        "What to do for Obesity",
+        "overweight",
+        "weight gain",
+        "obesity risk"
+      ],
+      "responses": [
+        "**Possible Condition:** Obesity\n\n**Suggested Treatment:** Balanced diet and regular exercise are key. Consult a dietician.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Obesity. \n\n**Treatment:** Balanced diet and regular exercise are key. Consult a dietician.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Obesity. \n\n**Remedy:** Balanced diet and regular exercise are key. Consult a dietician.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "malaria",
+      "patterns": [
+        "I have Malaria",
+        "Symptoms of Malaria",
+        "Think I have Malaria",
+        "Treatment for Malaria",
+        "What to do for Malaria",
+        "shivering fever",
+        "mosquito bite fever",
+        "malaria symptoms"
+      ],
+      "responses": [
+        "**Possible Condition:** Malaria\n\n**Suggested Treatment:** Immediate blood test and medical treatment required.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Malaria. \n\n**Treatment:** Immediate blood test and medical treatment required.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Malaria. \n\n**Remedy:** Immediate blood test and medical treatment required.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "typhoid",
+      "patterns": [
+        "I have Typhoid",
+        "Symptoms of Typhoid",
+        "Think I have Typhoid",
+        "Treatment for Typhoid",
+        "What to do for Typhoid",
+        "prolonged fever",
+        "typhoid symptoms",
+        "stomach pain fever"
+      ],
+      "responses": [
+        "**Possible Condition:** Typhoid\n\n**Suggested Treatment:** Antibiotics and hygiene are crucial. See a doctor.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Typhoid. \n\n**Treatment:** Antibiotics and hygiene are crucial. See a doctor.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Typhoid. \n\n**Remedy:** Antibiotics and hygiene are crucial. See a doctor.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "dengue",
+      "patterns": [
+        "I have Dengue",
+        "Symptoms of Dengue",
+        "Think I have Dengue",
+        "Treatment for Dengue",
+        "What to do for Dengue",
+        "platelet drop",
+        "bone breaking pain",
+        "dengue fever"
+      ],
+      "responses": [
+        "**Possible Condition:** Dengue\n\n**Suggested Treatment:** Fluid management is critical. Monitor platelets.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Dengue. \n\n**Treatment:** Fluid management is critical. Monitor platelets.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Dengue. \n\n**Remedy:** Fluid management is critical. Monitor platelets.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "chickenpox",
+      "patterns": [
+        "I have Chickenpox",
+        "Symptoms of Chickenpox",
+        "Think I have Chickenpox",
+        "Treatment for Chickenpox",
+        "What to do for Chickenpox",
+        "itchy blisters",
+        "pox marks",
+        "chickenpox"
+      ],
+      "responses": [
+        "**Possible Condition:** Chickenpox\n\n**Suggested Treatment:** Rest, calamine lotion, and isolation.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Chickenpox. \n\n**Treatment:** Rest, calamine lotion, and isolation.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Chickenpox. \n\n**Remedy:** Rest, calamine lotion, and isolation.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "pneumonia",
+      "patterns": [
+        "I have Pneumonia",
+        "Symptoms of Pneumonia",
+        "Think I have Pneumonia",
+        "Treatment for Pneumonia",
+        "What to do for Pneumonia",
+        "chest congestion",
+        "productive cough",
+        "lung infection"
+      ],
+      "responses": [
+        "**Possible Condition:** Pneumonia\n\n**Suggested Treatment:** Requires medical assessment and possibly antibiotics.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Pneumonia. \n\n**Treatment:** Requires medical assessment and possibly antibiotics.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Pneumonia. \n\n**Remedy:** Requires medical assessment and possibly antibiotics.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "bronchitis",
+      "patterns": [
+        "I have Bronchitis",
+        "Symptoms of Bronchitis",
+        "Think I have Bronchitis",
+        "Treatment for Bronchitis",
+        "What to do for Bronchitis",
+        "cough",
+        "chest cold",
+        "bronchitis"
+      ],
+      "responses": [
+        "**Possible Condition:** Bronchitis\n\n**Suggested Treatment:** Rest and fluids. See a doctor if breathing is difficult.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Bronchitis. \n\n**Treatment:** Rest and fluids. See a doctor if breathing is difficult.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Bronchitis. \n\n**Remedy:** Rest and fluids. See a doctor if breathing is difficult.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "tuberculosis",
+      "patterns": [
+        "I have Tuberculosis",
+        "Symptoms of Tuberculosis",
+        "Think I have Tuberculosis",
+        "Treatment for Tuberculosis",
+        "What to do for Tuberculosis",
+        "coughing blood",
+        "night sweats",
+        "weight loss tb"
+      ],
+      "responses": [
+        "**Possible Condition:** Tuberculosis\n\n**Suggested Treatment:** Strict adherence to antibiotic course required. See a specialist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Tuberculosis. \n\n**Treatment:** Strict adherence to antibiotic course required. See a specialist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Tuberculosis. \n\n**Remedy:** Strict adherence to antibiotic course required. See a specialist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "kidney_stones",
+      "patterns": [
+        "I have Kidney Stones",
+        "Symptoms of Kidney Stones",
+        "Think I have Kidney Stones",
+        "Treatment for Kidney Stones",
+        "What to do for Kidney Stones",
+        "sharp back pain",
+        "blood in urine",
+        "renal colic"
+      ],
+      "responses": [
+        "**Possible Condition:** Kidney Stones\n\n**Suggested Treatment:** Drink lots of water. Pain management and medical advice needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Kidney Stones. \n\n**Treatment:** Drink lots of water. Pain management and medical advice needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Kidney Stones. \n\n**Remedy:** Drink lots of water. Pain management and medical advice needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "uti",
+      "patterns": [
+        "I have UTI",
+        "Symptoms of UTI",
+        "Think I have UTI",
+        "Treatment for UTI",
+        "What to do for UTI",
+        "burning urine",
+        "frequent urination pain",
+        "urinary infection"
+      ],
+      "responses": [
+        "**Possible Condition:** UTI\n\n**Suggested Treatment:** Drink water and cranberry juice. Antibiotics may be needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be UTI. \n\n**Treatment:** Drink water and cranberry juice. Antibiotics may be needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing UTI. \n\n**Remedy:** Drink water and cranberry juice. Antibiotics may be needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "psoriasis",
+      "patterns": [
+        "I have Psoriasis",
+        "Symptoms of Psoriasis",
+        "Think I have Psoriasis",
+        "Treatment for Psoriasis",
+        "What to do for Psoriasis",
+        "silvery scales",
+        "psoriasis patches",
+        "skin plaques"
+      ],
+      "responses": [
+        "**Possible Condition:** Psoriasis\n\n**Suggested Treatment:** Topical treatments and phototherapy can help.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Psoriasis. \n\n**Treatment:** Topical treatments and phototherapy can help.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Psoriasis. \n\n**Remedy:** Topical treatments and phototherapy can help.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "rosacea",
+      "patterns": [
+        "I have Rosacea",
+        "Symptoms of Rosacea",
+        "Think I have Rosacea",
+        "Treatment for Rosacea",
+        "What to do for Rosacea",
+        "red face",
+        "facial flushing",
+        "rosacea"
+      ],
+      "responses": [
+        "**Possible Condition:** Rosacea\n\n**Suggested Treatment:** Identify triggers like spicy food or sun/heat.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Rosacea. \n\n**Treatment:** Identify triggers like spicy food or sun/heat.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Rosacea. \n\n**Remedy:** Identify triggers like spicy food or sun/heat.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "scabies",
+      "patterns": [
+        "I have Scabies",
+        "Symptoms of Scabies",
+        "Think I have Scabies",
+        "Treatment for Scabies",
+        "What to do for Scabies",
+        "intense itching",
+        "night itch",
+        "scabies mites"
+      ],
+      "responses": [
+        "**Possible Condition:** Scabies\n\n**Suggested Treatment:** Prescription cream is needed for the whole range.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Scabies. \n\n**Treatment:** Prescription cream is needed for the whole range.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Scabies. \n\n**Remedy:** Prescription cream is needed for the whole range.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "vertigo",
+      "patterns": [
+        "I have Vertigo",
+        "Symptoms of Vertigo",
+        "Think I have Vertigo",
+        "Treatment for Vertigo",
+        "What to do for Vertigo",
+        "spinning sensation",
+        "dizzy spells",
+        "vertigo"
+      ],
+      "responses": [
+        "**Possible Condition:** Vertigo\n\n**Suggested Treatment:** Lie down. Vestibular exercises may help.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Vertigo. \n\n**Treatment:** Lie down. Vestibular exercises may help.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Vertigo. \n\n**Remedy:** Lie down. Vestibular exercises may help.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "tinnitus",
+      "patterns": [
+        "I have Tinnitus",
+        "Symptoms of Tinnitus",
+        "Think I have Tinnitus",
+        "Treatment for Tinnitus",
+        "What to do for Tinnitus",
+        "ringing in ears",
+        "ear noise",
+        "tinnitus"
+      ],
+      "responses": [
+        "**Possible Condition:** Tinnitus\n\n**Suggested Treatment:** Avoid loud noises. Consult an ENT if persistent.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Tinnitus. \n\n**Treatment:** Avoid loud noises. Consult an ENT if persistent.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Tinnitus. \n\n**Remedy:** Avoid loud noises. Consult an ENT if persistent.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "gingivitis",
+      "patterns": [
+        "I have Gingivitis",
+        "Symptoms of Gingivitis",
+        "Think I have Gingivitis",
+        "Treatment for Gingivitis",
+        "What to do for Gingivitis",
+        "bleeding gums",
+        "swollen gums",
+        "gum disease"
+      ],
+      "responses": [
+        "**Possible Condition:** Gingivitis\n\n**Suggested Treatment:** Brush and floss daily. See a dentist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Gingivitis. \n\n**Treatment:** Brush and floss daily. See a dentist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Gingivitis. \n\n**Remedy:** Brush and floss daily. See a dentist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "toothache",
+      "patterns": [
+        "I have Toothache",
+        "Symptoms of Toothache",
+        "Think I have Toothache",
+        "Treatment for Toothache",
+        "What to do for Toothache",
+        "tooth pain",
+        "cavity pain",
+        "sensitive tooth"
+      ],
+      "responses": [
+        "**Possible Condition:** Toothache\n\n**Suggested Treatment:** Rinse with warm salt water. See a dentist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Toothache. \n\n**Treatment:** Rinse with warm salt water. See a dentist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Toothache. \n\n**Remedy:** Rinse with warm salt water. See a dentist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "bad_breath",
+      "patterns": [
+        "I have Bad Breath",
+        "Symptoms of Bad Breath",
+        "Think I have Bad Breath",
+        "Treatment for Bad Breath",
+        "What to do for Bad Breath",
+        "halitosis",
+        "smelly breath",
+        "bad breath"
+      ],
+      "responses": [
+        "**Possible Condition:** Bad Breath\n\n**Suggested Treatment:** Oral hygiene and hydration. Check for dental issues.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Bad Breath. \n\n**Treatment:** Oral hygiene and hydration. Check for dental issues.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Bad Breath. \n\n**Remedy:** Oral hygiene and hydration. Check for dental issues.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "dry_eye",
+      "patterns": [
+        "I have Dry Eye",
+        "Symptoms of Dry Eye",
+        "Think I have Dry Eye",
+        "Treatment for Dry Eye",
+        "What to do for Dry Eye",
+        "gritty eyes",
+        "dry eyes",
+        "eye irritation"
+      ],
+      "responses": [
+        "**Possible Condition:** Dry Eye\n\n**Suggested Treatment:** Use artificial tears. Blink more often.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Dry Eye. \n\n**Treatment:** Use artificial tears. Blink more often.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Dry Eye. \n\n**Remedy:** Use artificial tears. Blink more often.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "cataract",
+      "patterns": [
+        "I have Cataract",
+        "Symptoms of Cataract",
+        "Think I have Cataract",
+        "Treatment for Cataract",
+        "What to do for Cataract",
+        "cloudy vision",
+        "blurred vision",
+        "cataract"
+      ],
+      "responses": [
+        "**Possible Condition:** Cataract\n\n**Suggested Treatment:** Surgery is the only effective treatment.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Cataract. \n\n**Treatment:** Surgery is the only effective treatment.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Cataract. \n\n**Remedy:** Surgery is the only effective treatment.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "glaucoma",
+      "patterns": [
+        "I have Glaucoma",
+        "Symptoms of Glaucoma",
+        "Think I have Glaucoma",
+        "Treatment for Glaucoma",
+        "What to do for Glaucoma",
+        "eye pressure",
+        "tunnel vision",
+        "glaucoma"
+      ],
+      "responses": [
+        "**Possible Condition:** Glaucoma\n\n**Suggested Treatment:** Regular eye drops and checkups are essential.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Glaucoma. \n\n**Treatment:** Regular eye drops and checkups are essential.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Glaucoma. \n\n**Remedy:** Regular eye drops and checkups are essential.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hypothyroidism",
+      "patterns": [
+        "I have Hypothyroidism",
+        "Symptoms of Hypothyroidism",
+        "Think I have Hypothyroidism",
+        "Treatment for Hypothyroidism",
+        "What to do for Hypothyroidism",
+        "weight gain",
+        "cold intolerance",
+        "slow metabolism"
+      ],
+      "responses": [
+        "**Possible Condition:** Hypothyroidism\n\n**Suggested Treatment:** Thyroid hormone replacement therapy is usually needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hypothyroidism. \n\n**Treatment:** Thyroid hormone replacement therapy is usually needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hypothyroidism. \n\n**Remedy:** Thyroid hormone replacement therapy is usually needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hyperthyroidism",
+      "patterns": [
+        "I have Hyperthyroidism",
+        "Symptoms of Hyperthyroidism",
+        "Think I have Hyperthyroidism",
+        "Treatment for Hyperthyroidism",
+        "What to do for Hyperthyroidism",
+        "weight loss",
+        "fast heart rate",
+        "overactive thyroid"
+      ],
+      "responses": [
+        "**Possible Condition:** Hyperthyroidism\n\n**Suggested Treatment:** Medication or radioactive iodine treatment.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hyperthyroidism. \n\n**Treatment:** Medication or radioactive iodine treatment.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hyperthyroidism. \n\n**Remedy:** Medication or radioactive iodine treatment.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "osteoporosis",
+      "patterns": [
+        "I have Osteoporosis",
+        "Symptoms of Osteoporosis",
+        "Think I have Osteoporosis",
+        "Treatment for Osteoporosis",
+        "What to do for Osteoporosis",
+        "brittle bones",
+        "frequent fractures",
+        "low bone density"
+      ],
+      "responses": [
+        "**Possible Condition:** Osteoporosis\n\n**Suggested Treatment:** Calcium, Vitamin D, and weight-bearing exercises.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Osteoporosis. \n\n**Treatment:** Calcium, Vitamin D, and weight-bearing exercises.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Osteoporosis. \n\n**Remedy:** Calcium, Vitamin D, and weight-bearing exercises.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "gout",
+      "patterns": [
+        "I have Gout",
+        "Symptoms of Gout",
+        "Think I have Gout",
+        "Treatment for Gout",
+        "What to do for Gout",
+        "toe pain",
+        "high uric acid",
+        "joint redness"
+      ],
+      "responses": [
+        "**Possible Condition:** Gout\n\n**Suggested Treatment:** Diet changes (low purine) and medication.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Gout. \n\n**Treatment:** Diet changes (low purine) and medication.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Gout. \n\n**Remedy:** Diet changes (low purine) and medication.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "carpal_tunnel",
+      "patterns": [
+        "I have Carpal Tunnel",
+        "Symptoms of Carpal Tunnel",
+        "Think I have Carpal Tunnel",
+        "Treatment for Carpal Tunnel",
+        "What to do for Carpal Tunnel",
+        "wrist pain",
+        "numb fingers",
+        "mouse hand"
+      ],
+      "responses": [
+        "**Possible Condition:** Carpal Tunnel\n\n**Suggested Treatment:** Wrist splints, breaks, and ergonomic setup.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Carpal Tunnel. \n\n**Treatment:** Wrist splints, breaks, and ergonomic setup.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Carpal Tunnel. \n\n**Remedy:** Wrist splints, breaks, and ergonomic setup.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "back_pain",
+      "patterns": [
+        "I have Back Pain",
+        "Symptoms of Back Pain",
+        "Think I have Back Pain",
+        "Treatment for Back Pain",
+        "What to do for Back Pain",
+        "lower back pain",
+        "lumbago",
+        "back ache"
+      ],
+      "responses": [
+        "**Possible Condition:** Back Pain\n\n**Suggested Treatment:** Posture correction, stretching, and core strengthening.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Back Pain. \n\n**Treatment:** Posture correction, stretching, and core strengthening.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Back Pain. \n\n**Remedy:** Posture correction, stretching, and core strengthening.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "neck_pain",
+      "patterns": [
+        "I have Neck Pain",
+        "Symptoms of Neck Pain",
+        "Think I have Neck Pain",
+        "Treatment for Neck Pain",
+        "What to do for Neck Pain",
+        "stiff neck",
+        "neck ache",
+        "cervical pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Neck Pain\n\n**Suggested Treatment:** Ergonomic pillow and neck exercises.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Neck Pain. \n\n**Treatment:** Ergonomic pillow and neck exercises.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Neck Pain. \n\n**Remedy:** Ergonomic pillow and neck exercises.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "scoliosis",
+      "patterns": [
+        "I have Scoliosis",
+        "Symptoms of Scoliosis",
+        "Think I have Scoliosis",
+        "Treatment for Scoliosis",
+        "What to do for Scoliosis",
+        "curved spine",
+        "uneven shoulders",
+        "scoliosis"
+      ],
+      "responses": [
+        "**Possible Condition:** Scoliosis\n\n**Suggested Treatment:** Monitoring, bracing, or surgery depending on severity.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Scoliosis. \n\n**Treatment:** Monitoring, bracing, or surgery depending on severity.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Scoliosis. \n\n**Remedy:** Monitoring, bracing, or surgery depending on severity.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "varicose_veins",
+      "patterns": [
+        "I have Varicose Veins",
+        "Symptoms of Varicose Veins",
+        "Think I have Varicose Veins",
+        "Treatment for Varicose Veins",
+        "What to do for Varicose Veins",
+        "swollen veins",
+        "leg veins",
+        "varicose"
+      ],
+      "responses": [
+        "**Possible Condition:** Varicose Veins\n\n**Suggested Treatment:** Compression stockings and leg elevation.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Varicose Veins. \n\n**Treatment:** Compression stockings and leg elevation.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Varicose Veins. \n\n**Remedy:** Compression stockings and leg elevation.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "deep_vein_thrombosis",
+      "patterns": [
+        "I have Deep Vein Thrombosis",
+        "Symptoms of Deep Vein Thrombosis",
+        "Think I have Deep Vein Thrombosis",
+        "Treatment for Deep Vein Thrombosis",
+        "What to do for Deep Vein Thrombosis",
+        "leg swelling",
+        "calf pain",
+        "DVT"
+      ],
+      "responses": [
+        "**Possible Condition:** Deep Vein Thrombosis\n\n**Suggested Treatment:** Medical emergency. Risks pulmonary embolism.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Deep Vein Thrombosis. \n\n**Treatment:** Medical emergency. Risks pulmonary embolism.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Deep Vein Thrombosis. \n\n**Remedy:** Medical emergency. Risks pulmonary embolism.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "heart_attack",
+      "patterns": [
+        "I have Heart Attack",
+        "Symptoms of Heart Attack",
+        "Think I have Heart Attack",
+        "Treatment for Heart Attack",
+        "What to do for Heart Attack",
+        "chest pressure",
+        "arm pain",
+        "myocardial infarction"
+      ],
+      "responses": [
+        "**Possible Condition:** Heart Attack\n\n**Suggested Treatment:** CALL EMERGENCY IMMEDIATELY. Chew aspirin if advised.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Heart Attack. \n\n**Treatment:** CALL EMERGENCY IMMEDIATELY. Chew aspirin if advised.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Heart Attack. \n\n**Remedy:** CALL EMERGENCY IMMEDIATELY. Chew aspirin if advised.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "stroke",
+      "patterns": [
+        "I have Stroke",
+        "Symptoms of Stroke",
+        "Think I have Stroke",
+        "Treatment for Stroke",
+        "What to do for Stroke",
+        "face drooping",
+        "arm weakness",
+        "slurred speech"
+      ],
+      "responses": [
+        "**Possible Condition:** Stroke\n\n**Suggested Treatment:** CALL EMERGENCY. Time is brain.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Stroke. \n\n**Treatment:** CALL EMERGENCY. Time is brain.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Stroke. \n\n**Remedy:** CALL EMERGENCY. Time is brain.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "arrhythmia",
+      "patterns": [
+        "I have Arrhythmia",
+        "Symptoms of Arrhythmia",
+        "Think I have Arrhythmia",
+        "Treatment for Arrhythmia",
+        "What to do for Arrhythmia",
+        "palpitations",
+        "irregular heartbeat",
+        "skipped beats"
+      ],
+      "responses": [
+        "**Possible Condition:** Arrhythmia\n\n**Suggested Treatment:** Cardiologist evaluation needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Arrhythmia. \n\n**Treatment:** Cardiologist evaluation needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Arrhythmia. \n\n**Remedy:** Cardiologist evaluation needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "heart_failure",
+      "patterns": [
+        "I have Heart Failure",
+        "Symptoms of Heart Failure",
+        "Think I have Heart Failure",
+        "Treatment for Heart Failure",
+        "What to do for Heart Failure",
+        "swollen ankles",
+        "breathlessness",
+        "heart failure"
+      ],
+      "responses": [
+        "**Possible Condition:** Heart Failure\n\n**Suggested Treatment:** Strict medication and diet adherence.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Heart Failure. \n\n**Treatment:** Strict medication and diet adherence.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Heart Failure. \n\n**Remedy:** Strict medication and diet adherence.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "cholesterol",
+      "patterns": [
+        "I have Cholesterol",
+        "Symptoms of Cholesterol",
+        "Think I have Cholesterol",
+        "Treatment for Cholesterol",
+        "What to do for Cholesterol",
+        "high lipid",
+        "ldl cholesterol",
+        "high cholesterol"
+      ],
+      "responses": [
+        "**Possible Condition:** Cholesterol\n\n**Suggested Treatment:** Diet, exercise, and statins if prescribed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Cholesterol. \n\n**Treatment:** Diet, exercise, and statins if prescribed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Cholesterol. \n\n**Remedy:** Diet, exercise, and statins if prescribed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "appendicitis",
+      "patterns": [
+        "I have Appendicitis",
+        "Symptoms of Appendicitis",
+        "Think I have Appendicitis",
+        "Treatment for Appendicitis",
+        "What to do for Appendicitis",
+        "right lower stomach pain",
+        "rebound tenderness",
+        "appendix"
+      ],
+      "responses": [
+        "**Possible Condition:** Appendicitis\n\n**Suggested Treatment:** Emergency surgery usually required.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Appendicitis. \n\n**Treatment:** Emergency surgery usually required.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Appendicitis. \n\n**Remedy:** Emergency surgery usually required.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hernia",
+      "patterns": [
+        "I have Hernia",
+        "Symptoms of Hernia",
+        "Think I have Hernia",
+        "Treatment for Hernia",
+        "What to do for Hernia",
+        "groin lump",
+        "bulge in abdomen",
+        "hernia"
+      ],
+      "responses": [
+        "**Possible Condition:** Hernia\n\n**Suggested Treatment:** Surgery is often needed to repair the wall.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hernia. \n\n**Treatment:** Surgery is often needed to repair the wall.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hernia. \n\n**Remedy:** Surgery is often needed to repair the wall.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hemorrhoids",
+      "patterns": [
+        "I have Hemorrhoids",
+        "Symptoms of Hemorrhoids",
+        "Think I have Hemorrhoids",
+        "Treatment for Hemorrhoids",
+        "What to do for Hemorrhoids",
+        "piles",
+        "rectal pain",
+        "blood in stool"
+      ],
+      "responses": [
+        "**Possible Condition:** Hemorrhoids\n\n**Suggested Treatment:** High fiber diet, sitz baths.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hemorrhoids. \n\n**Treatment:** High fiber diet, sitz baths.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hemorrhoids. \n\n**Remedy:** High fiber diet, sitz baths.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "ibs",
+      "patterns": [
+        "I have IBS",
+        "Symptoms of IBS",
+        "Think I have IBS",
+        "Treatment for IBS",
+        "What to do for IBS",
+        "irritable bowel",
+        "bloating",
+        "ibs symptoms"
+      ],
+      "responses": [
+        "**Possible Condition:** IBS\n\n**Suggested Treatment:** Dietary changes (FODMAP) and stress management.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be IBS. \n\n**Treatment:** Dietary changes (FODMAP) and stress management.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing IBS. \n\n**Remedy:** Dietary changes (FODMAP) and stress management.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "lactose_intolerance",
+      "patterns": [
+        "I have Lactose Intolerance",
+        "Symptoms of Lactose Intolerance",
+        "Think I have Lactose Intolerance",
+        "Treatment for Lactose Intolerance",
+        "What to do for Lactose Intolerance",
+        "milk gives gas",
+        "dairy allergy",
+        "lactose"
+      ],
+      "responses": [
+        "**Possible Condition:** Lactose Intolerance\n\n**Suggested Treatment:** Avoid dairy or use lactase enzymes.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Lactose Intolerance. \n\n**Treatment:** Avoid dairy or use lactase enzymes.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Lactose Intolerance. \n\n**Remedy:** Avoid dairy or use lactase enzymes.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "celiac_disease",
+      "patterns": [
+        "I have Celiac Disease",
+        "Symptoms of Celiac Disease",
+        "Think I have Celiac Disease",
+        "Treatment for Celiac Disease",
+        "What to do for Celiac Disease",
+        "gluten sensitivity",
+        "wheat allergy",
+        "celiac"
+      ],
+      "responses": [
+        "**Possible Condition:** Celiac Disease\n\n**Suggested Treatment:** Strict gluten-free diet.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Celiac Disease. \n\n**Treatment:** Strict gluten-free diet.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Celiac Disease. \n\n**Remedy:** Strict gluten-free diet.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "liver_disease",
+      "patterns": [
+        "I have Liver Disease",
+        "Symptoms of Liver Disease",
+        "Think I have Liver Disease",
+        "Treatment for Liver Disease",
+        "What to do for Liver Disease",
+        "jaundice",
+        "yellow eyes",
+        "liver pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Liver Disease\n\n**Suggested Treatment:** Avoid alcohol, manage diet.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Liver Disease. \n\n**Treatment:** Avoid alcohol, manage diet.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Liver Disease. \n\n**Remedy:** Avoid alcohol, manage diet.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "gallstones",
+      "patterns": [
+        "I have Gallstones",
+        "Symptoms of Gallstones",
+        "Think I have Gallstones",
+        "Treatment for Gallstones",
+        "What to do for Gallstones",
+        "gallbladder pain",
+        "stone pain",
+        "gallstones"
+      ],
+      "responses": [
+        "**Possible Condition:** Gallstones\n\n**Suggested Treatment:** Surgery might be needed if symptomatic.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Gallstones. \n\n**Treatment:** Surgery might be needed if symptomatic.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Gallstones. \n\n**Remedy:** Surgery might be needed if symptomatic.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "pancreatitis",
+      "patterns": [
+        "I have Pancreatitis",
+        "Symptoms of Pancreatitis",
+        "Think I have Pancreatitis",
+        "Treatment for Pancreatitis",
+        "What to do for Pancreatitis",
+        "severe upper abdo pain",
+        "pancreas inflammation",
+        "pancreatitis"
+      ],
+      "responses": [
+        "**Possible Condition:** Pancreatitis\n\n**Suggested Treatment:** Hospital admission, fasting, and fluids.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Pancreatitis. \n\n**Treatment:** Hospital admission, fasting, and fluids.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Pancreatitis. \n\n**Remedy:** Hospital admission, fasting, and fluids.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "kidney_infection",
+      "patterns": [
+        "I have Kidney Infection",
+        "Symptoms of Kidney Infection",
+        "Think I have Kidney Infection",
+        "Treatment for Kidney Infection",
+        "What to do for Kidney Infection",
+        "fever and flank pain",
+        "pyelonephritis",
+        "kidney pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Kidney Infection\n\n**Suggested Treatment:** Antibiotics required.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Kidney Infection. \n\n**Treatment:** Antibiotics required.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Kidney Infection. \n\n**Remedy:** Antibiotics required.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "incontinence",
+      "patterns": [
+        "I have Incontinence",
+        "Symptoms of Incontinence",
+        "Think I have Incontinence",
+        "Treatment for Incontinence",
+        "What to do for Incontinence",
+        "leak urine",
+        "bladder control",
+        "incontinence"
+      ],
+      "responses": [
+        "**Possible Condition:** Incontinence\n\n**Suggested Treatment:** Pelvic floor exercises and medical advice.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Incontinence. \n\n**Treatment:** Pelvic floor exercises and medical advice.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Incontinence. \n\n**Remedy:** Pelvic floor exercises and medical advice.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "prostate_issues",
+      "patterns": [
+        "I have Prostate Issues",
+        "Symptoms of Prostate Issues",
+        "Think I have Prostate Issues",
+        "Treatment for Prostate Issues",
+        "What to do for Prostate Issues",
+        "frequent night pee",
+        "prostate",
+        "bph"
+      ],
+      "responses": [
+        "**Possible Condition:** Prostate Issues\n\n**Suggested Treatment:** Consult a urologist.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Prostate Issues. \n\n**Treatment:** Consult a urologist.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Prostate Issues. \n\n**Remedy:** Consult a urologist.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "erectile_dysfunction",
+      "patterns": [
+        "I have Erectile Dysfunction",
+        "Symptoms of Erectile Dysfunction",
+        "Think I have Erectile Dysfunction",
+        "Treatment for Erectile Dysfunction",
+        "What to do for Erectile Dysfunction",
+        "impotence",
+        "ed issues",
+        "erectile"
+      ],
+      "responses": [
+        "**Possible Condition:** Erectile Dysfunction\n\n**Suggested Treatment:** Consult a doctor. Treat underlying causes.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Erectile Dysfunction. \n\n**Treatment:** Consult a doctor. Treat underlying causes.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Erectile Dysfunction. \n\n**Remedy:** Consult a doctor. Treat underlying causes.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "menopause",
+      "patterns": [
+        "I have Menopause",
+        "Symptoms of Menopause",
+        "Think I have Menopause",
+        "Treatment for Menopause",
+        "What to do for Menopause",
+        "hot flashes",
+        "periods stopping",
+        "menopause"
+      ],
+      "responses": [
+        "**Possible Condition:** Menopause\n\n**Suggested Treatment:** Lifestyle changes and hormone therapy if severe.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Menopause. \n\n**Treatment:** Lifestyle changes and hormone therapy if severe.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Menopause. \n\n**Remedy:** Lifestyle changes and hormone therapy if severe.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "pcos",
+      "patterns": [
+        "I have PCOS",
+        "Symptoms of PCOS",
+        "Think I have PCOS",
+        "Treatment for PCOS",
+        "What to do for PCOS",
+        "irregular periods",
+        "ovarian cysts",
+        "pcos"
+      ],
+      "responses": [
+        "**Possible Condition:** PCOS\n\n**Suggested Treatment:** Diet, exercise, and hormonal management.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be PCOS. \n\n**Treatment:** Diet, exercise, and hormonal management.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing PCOS. \n\n**Remedy:** Diet, exercise, and hormonal management.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "endometriosis",
+      "patterns": [
+        "I have Endometriosis",
+        "Symptoms of Endometriosis",
+        "Think I have Endometriosis",
+        "Treatment for Endometriosis",
+        "What to do for Endometriosis",
+        "painful periods",
+        "pelvic pain",
+        "endometriosis"
+      ],
+      "responses": [
+        "**Possible Condition:** Endometriosis\n\n**Suggested Treatment:** Pain management and hormonal treatments.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Endometriosis. \n\n**Treatment:** Pain management and hormonal treatments.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Endometriosis. \n\n**Remedy:** Pain management and hormonal treatments.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "pregnancy",
+      "patterns": [
+        "I have Pregnancy",
+        "Symptoms of Pregnancy",
+        "Think I have Pregnancy",
+        "Treatment for Pregnancy",
+        "What to do for Pregnancy",
+        "morning sickness",
+        "pregnant symptoms",
+        "baby bump"
+      ],
+      "responses": [
+        "**Possible Condition:** Pregnancy\n\n**Suggested Treatment:** Prenatal care is essential. Take folic acid.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Pregnancy. \n\n**Treatment:** Prenatal care is essential. Take folic acid.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Pregnancy. \n\n**Remedy:** Prenatal care is essential. Take folic acid.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "morning_sickness",
+      "patterns": [
+        "I have Morning Sickness",
+        "Symptoms of Morning Sickness",
+        "Think I have Morning Sickness",
+        "Treatment for Morning Sickness",
+        "What to do for Morning Sickness",
+        "nausea pregnancy",
+        "vomiting morning",
+        "morning sickness"
+      ],
+      "responses": [
+        "**Possible Condition:** Morning Sickness\n\n**Suggested Treatment:** Small frequent meals, ginger.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Morning Sickness. \n\n**Treatment:** Small frequent meals, ginger.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Morning Sickness. \n\n**Remedy:** Small frequent meals, ginger.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "labor",
+      "patterns": [
+        "I have Labor",
+        "Symptoms of Labor",
+        "Think I have Labor",
+        "Treatment for Labor",
+        "What to do for Labor",
+        "contractions",
+        "water broke",
+        "giving birth"
+      ],
+      "responses": [
+        "**Possible Condition:** Labor\n\n**Suggested Treatment:** Go to the hospital immediately.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Labor. \n\n**Treatment:** Go to the hospital immediately.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Labor. \n\n**Remedy:** Go to the hospital immediately.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "breastfeeding",
+      "patterns": [
+        "I have Breastfeeding",
+        "Symptoms of Breastfeeding",
+        "Think I have Breastfeeding",
+        "Treatment for Breastfeeding",
+        "What to do for Breastfeeding",
+        "latching",
+        "nursing",
+        "breastfeeding"
+      ],
+      "responses": [
+        "**Possible Condition:** Breastfeeding\n\n**Suggested Treatment:** Consult a lactation consultant.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Breastfeeding. \n\n**Treatment:** Consult a lactation consultant.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Breastfeeding. \n\n**Remedy:** Consult a lactation consultant.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "mastitis",
+      "patterns": [
+        "I have Mastitis",
+        "Symptoms of Mastitis",
+        "Think I have Mastitis",
+        "Treatment for Mastitis",
+        "What to do for Mastitis",
+        "breast pain fever",
+        "blocked milk duct",
+        "mastitis"
+      ],
+      "responses": [
+        "**Possible Condition:** Mastitis\n\n**Suggested Treatment:** Keep nursing/pumping. Antibiotics if fever persists.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Mastitis. \n\n**Treatment:** Keep nursing/pumping. Antibiotics if fever persists.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Mastitis. \n\n**Remedy:** Keep nursing/pumping. Antibiotics if fever persists.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "postpartum_depression",
+      "patterns": [
+        "I have Postpartum Depression",
+        "Symptoms of Postpartum Depression",
+        "Think I have Postpartum Depression",
+        "Treatment for Postpartum Depression",
+        "What to do for Postpartum Depression",
+        "baby blues",
+        "crying after birth",
+        "PPD"
+      ],
+      "responses": [
+        "**Possible Condition:** Postpartum Depression\n\n**Suggested Treatment:** Seek help. You are not alone.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Postpartum Depression. \n\n**Treatment:** Seek help. You are not alone.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Postpartum Depression. \n\n**Remedy:** Seek help. You are not alone.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "diaper_rash",
+      "patterns": [
+        "I have Diaper Rash",
+        "Symptoms of Diaper Rash",
+        "Think I have Diaper Rash",
+        "Treatment for Diaper Rash",
+        "What to do for Diaper Rash",
+        "baby bum red",
+        "nappy rash",
+        "rash on baby"
+      ],
+      "responses": [
+        "**Possible Condition:** Diaper Rash\n\n**Suggested Treatment:** Frequent changes, barrier cream, air time.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Diaper Rash. \n\n**Treatment:** Frequent changes, barrier cream, air time.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Diaper Rash. \n\n**Remedy:** Frequent changes, barrier cream, air time.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "colic",
+      "patterns": [
+        "I have Colic",
+        "Symptoms of Colic",
+        "Think I have Colic",
+        "Treatment for Colic",
+        "What to do for Colic",
+        "baby crying",
+        "colicky baby",
+        "fussy baby"
+      ],
+      "responses": [
+        "**Possible Condition:** Colic\n\n**Suggested Treatment:** Comfort measures, ensure burping.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Colic. \n\n**Treatment:** Comfort measures, ensure burping.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Colic. \n\n**Remedy:** Comfort measures, ensure burping.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "teething",
+      "patterns": [
+        "I have Teething",
+        "Symptoms of Teething",
+        "Think I have Teething",
+        "Treatment for Teething",
+        "What to do for Teething",
+        "baby drooling",
+        "tooth erupting",
+        "teething pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Teething\n\n**Suggested Treatment:** Teething rings, cool cloth.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Teething. \n\n**Treatment:** Teething rings, cool cloth.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Teething. \n\n**Remedy:** Teething rings, cool cloth.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "croup",
+      "patterns": [
+        "I have Croup",
+        "Symptoms of Croup",
+        "Think I have Croup",
+        "Treatment for Croup",
+        "What to do for Croup",
+        "barking cough",
+        "child noisy breathing",
+        "croup"
+      ],
+      "responses": [
+        "**Possible Condition:** Croup\n\n**Suggested Treatment:** Steam or cool night air. Monitor breathing.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Croup. \n\n**Treatment:** Steam or cool night air. Monitor breathing.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Croup. \n\n**Remedy:** Steam or cool night air. Monitor breathing.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "measles",
+      "patterns": [
+        "I have Measles",
+        "Symptoms of Measles",
+        "Think I have Measles",
+        "Treatment for Measles",
+        "What to do for Measles",
+        "koplik spots",
+        "measles rash",
+        "measles"
+      ],
+      "responses": [
+        "**Possible Condition:** Measles\n\n**Suggested Treatment:** Vaccination is key prevention. Supportive care.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Measles. \n\n**Treatment:** Vaccination is key prevention. Supportive care.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Measles. \n\n**Remedy:** Vaccination is key prevention. Supportive care.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "mumps",
+      "patterns": [
+        "I have Mumps",
+        "Symptoms of Mumps",
+        "Think I have Mumps",
+        "Treatment for Mumps",
+        "What to do for Mumps",
+        "swollen jaw",
+        "mumps parotitis",
+        "mumps"
+      ],
+      "responses": [
+        "**Possible Condition:** Mumps\n\n**Suggested Treatment:** Isolation and pain management.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Mumps. \n\n**Treatment:** Isolation and pain management.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Mumps. \n\n**Remedy:** Isolation and pain management.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "rubella",
+      "patterns": [
+        "I have Rubella",
+        "Symptoms of Rubella",
+        "Think I have Rubella",
+        "Treatment for Rubella",
+        "What to do for Rubella",
+        "german measles",
+        "mild rash",
+        "rubella"
+      ],
+      "responses": [
+        "**Possible Condition:** Rubella\n\n**Suggested Treatment:** Vaccination (MMR). Danger to pregnancy.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Rubella. \n\n**Treatment:** Vaccination (MMR). Danger to pregnancy.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Rubella. \n\n**Remedy:** Vaccination (MMR). Danger to pregnancy.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "whooping_cough",
+      "patterns": [
+        "I have Whooping Cough",
+        "Symptoms of Whooping Cough",
+        "Think I have Whooping Cough",
+        "Treatment for Whooping Cough",
+        "What to do for Whooping Cough",
+        "pertussis",
+        "cough vomit",
+        "whoop sound"
+      ],
+      "responses": [
+        "**Possible Condition:** Whooping Cough\n\n**Suggested Treatment:** Antibiotics and vaccination.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Whooping Cough. \n\n**Treatment:** Antibiotics and vaccination.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Whooping Cough. \n\n**Remedy:** Antibiotics and vaccination.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "adhd",
+      "patterns": [
+        "I have ADHD",
+        "Symptoms of ADHD",
+        "Think I have ADHD",
+        "Treatment for ADHD",
+        "What to do for ADHD",
+        "hyperactive",
+        "can't focus",
+        "adhd symptoms"
+      ],
+      "responses": [
+        "**Possible Condition:** ADHD\n\n**Suggested Treatment:** Behavioral therapy and medication.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be ADHD. \n\n**Treatment:** Behavioral therapy and medication.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing ADHD. \n\n**Remedy:** Behavioral therapy and medication.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "autism",
+      "patterns": [
+        "I have Autism",
+        "Symptoms of Autism",
+        "Think I have Autism",
+        "Treatment for Autism",
+        "What to do for Autism",
+        "social difficulty",
+        "repetitive behavior",
+        "autism"
+      ],
+      "responses": [
+        "**Possible Condition:** Autism\n\n**Suggested Treatment:** Early intervention therapies.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Autism. \n\n**Treatment:** Early intervention therapies.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Autism. \n\n**Remedy:** Early intervention therapies.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "dyslexia",
+      "patterns": [
+        "I have Dyslexia",
+        "Symptoms of Dyslexia",
+        "Think I have Dyslexia",
+        "Treatment for Dyslexia",
+        "What to do for Dyslexia",
+        "reading trouble",
+        "learning disability",
+        "dyslexia"
+      ],
+      "responses": [
+        "**Possible Condition:** Dyslexia\n\n**Suggested Treatment:** Specialized education support.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Dyslexia. \n\n**Treatment:** Specialized education support.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Dyslexia. \n\n**Remedy:** Specialized education support.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "eating_disorder",
+      "patterns": [
+        "I have Eating Disorder",
+        "Symptoms of Eating Disorder",
+        "Think I have Eating Disorder",
+        "Treatment for Eating Disorder",
+        "What to do for Eating Disorder",
+        "anorexia",
+        "bulimia",
+        "food issue"
+      ],
+      "responses": [
+        "**Possible Condition:** Eating Disorder\n\n**Suggested Treatment:** Psychological and nutritional support.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Eating Disorder. \n\n**Treatment:** Psychological and nutritional support.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Eating Disorder. \n\n**Remedy:** Psychological and nutritional support.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "schizophrenia",
+      "patterns": [
+        "I have Schizophrenia",
+        "Symptoms of Schizophrenia",
+        "Think I have Schizophrenia",
+        "Treatment for Schizophrenia",
+        "What to do for Schizophrenia",
+        "hallucinations",
+        "hearing voices",
+        "schizophrenia"
+      ],
+      "responses": [
+        "**Possible Condition:** Schizophrenia\n\n**Suggested Treatment:** Antipsychotic medication and therapy.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Schizophrenia. \n\n**Treatment:** Antipsychotic medication and therapy.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Schizophrenia. \n\n**Remedy:** Antipsychotic medication and therapy.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "bipolar_disorder",
+      "patterns": [
+        "I have Bipolar Disorder",
+        "Symptoms of Bipolar Disorder",
+        "Think I have Bipolar Disorder",
+        "Treatment for Bipolar Disorder",
+        "What to do for Bipolar Disorder",
+        "mood swings",
+        "manic depression",
+        "bipolar"
+      ],
+      "responses": [
+        "**Possible Condition:** Bipolar Disorder\n\n**Suggested Treatment:** Mood stabilizers and therapy.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Bipolar Disorder. \n\n**Treatment:** Mood stabilizers and therapy.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Bipolar Disorder. \n\n**Remedy:** Mood stabilizers and therapy.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "ocd",
+      "patterns": [
+        "I have OCD",
+        "Symptoms of OCD",
+        "Think I have OCD",
+        "Treatment for OCD",
+        "What to do for OCD",
+        "obsessive thoughts",
+        "compulsive finish",
+        "ocd"
+      ],
+      "responses": [
+        "**Possible Condition:** OCD\n\n**Suggested Treatment:** CBT and medication.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be OCD. \n\n**Treatment:** CBT and medication.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing OCD. \n\n**Remedy:** CBT and medication.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "ptsd",
+      "patterns": [
+        "I have PTSD",
+        "Symptoms of PTSD",
+        "Think I have PTSD",
+        "Treatment for PTSD",
+        "What to do for PTSD",
+        "trauma flashback",
+        "nightmares",
+        "ptsd"
+      ],
+      "responses": [
+        "**Possible Condition:** PTSD\n\n**Suggested Treatment:** Trauma-focused therapy.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be PTSD. \n\n**Treatment:** Trauma-focused therapy.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing PTSD. \n\n**Remedy:** Trauma-focused therapy.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "alzheimers",
+      "patterns": [
+        "I have Alzheimer's",
+        "Symptoms of Alzheimer's",
+        "Think I have Alzheimer's",
+        "Treatment for Alzheimer's",
+        "What to do for Alzheimer's",
+        "memory loss",
+        "confusion",
+        "dementia"
+      ],
+      "responses": [
+        "**Possible Condition:** Alzheimer's\n\n**Suggested Treatment:** Supportive care and safety measures.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Alzheimer's. \n\n**Treatment:** Supportive care and safety measures.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Alzheimer's. \n\n**Remedy:** Supportive care and safety measures.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "parkinsons",
+      "patterns": [
+        "I have Parkinson's",
+        "Symptoms of Parkinson's",
+        "Think I have Parkinson's",
+        "Treatment for Parkinson's",
+        "What to do for Parkinson's",
+        "tremors",
+        "shaking hand",
+        "parkinson"
+      ],
+      "responses": [
+        "**Possible Condition:** Parkinson's\n\n**Suggested Treatment:** Medication to manage symptoms.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Parkinson's. \n\n**Treatment:** Medication to manage symptoms.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Parkinson's. \n\n**Remedy:** Medication to manage symptoms.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "multiple_sclerosis",
+      "patterns": [
+        "I have Multiple Sclerosis",
+        "Symptoms of Multiple Sclerosis",
+        "Think I have Multiple Sclerosis",
+        "Treatment for Multiple Sclerosis",
+        "What to do for Multiple Sclerosis",
+        "numbness",
+        "vision loss ms",
+        "multiple sclerosis"
+      ],
+      "responses": [
+        "**Possible Condition:** Multiple Sclerosis\n\n**Suggested Treatment:** Immunomodulatory therapy.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Multiple Sclerosis. \n\n**Treatment:** Immunomodulatory therapy.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Multiple Sclerosis. \n\n**Remedy:** Immunomodulatory therapy.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "als",
+      "patterns": [
+        "I have ALS",
+        "Symptoms of ALS",
+        "Think I have ALS",
+        "Treatment for ALS",
+        "What to do for ALS",
+        "muscle weakness",
+        "als",
+        "lou gehrig"
+      ],
+      "responses": [
+        "**Possible Condition:** ALS\n\n**Suggested Treatment:** Supportive care.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be ALS. \n\n**Treatment:** Supportive care.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing ALS. \n\n**Remedy:** Supportive care.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "epilepsy",
+      "patterns": [
+        "I have Epilepsy",
+        "Symptoms of Epilepsy",
+        "Think I have Epilepsy",
+        "Treatment for Epilepsy",
+        "What to do for Epilepsy",
+        "seizures",
+        "fits",
+        "epilepsy"
+      ],
+      "responses": [
+        "**Possible Condition:** Epilepsy\n\n**Suggested Treatment:** Anti-epileptic medication.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Epilepsy. \n\n**Treatment:** Anti-epileptic medication.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Epilepsy. \n\n**Remedy:** Anti-epileptic medication.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "bells_palsy",
+      "patterns": [
+        "I have Bell's Palsy",
+        "Symptoms of Bell's Palsy",
+        "Think I have Bell's Palsy",
+        "Treatment for Bell's Palsy",
+        "What to do for Bell's Palsy",
+        "face paralysis",
+        "droopy face",
+        "bell palsy"
+      ],
+      "responses": [
+        "**Possible Condition:** Bell's Palsy\n\n**Suggested Treatment:** Steroids and eye protection.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Bell's Palsy. \n\n**Treatment:** Steroids and eye protection.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Bell's Palsy. \n\n**Remedy:** Steroids and eye protection.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "meningitis",
+      "patterns": [
+        "I have Meningitis",
+        "Symptoms of Meningitis",
+        "Think I have Meningitis",
+        "Treatment for Meningitis",
+        "What to do for Meningitis",
+        "stiff neck fever",
+        "meningitis rash",
+        "brain infection"
+      ],
+      "responses": [
+        "**Possible Condition:** Meningitis\n\n**Suggested Treatment:** Medical emergency. Hospital immediately.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Meningitis. \n\n**Treatment:** Medical emergency. Hospital immediately.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Meningitis. \n\n**Remedy:** Medical emergency. Hospital immediately.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "encephalitis",
+      "patterns": [
+        "I have Encephalitis",
+        "Symptoms of Encephalitis",
+        "Think I have Encephalitis",
+        "Treatment for Encephalitis",
+        "What to do for Encephalitis",
+        "brain swelling",
+        "encephalitis",
+        "confusion fever"
+      ],
+      "responses": [
+        "**Possible Condition:** Encephalitis\n\n**Suggested Treatment:** Critical care required.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Encephalitis. \n\n**Treatment:** Critical care required.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Encephalitis. \n\n**Remedy:** Critical care required.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "rabies",
+      "patterns": [
+        "I have Rabies",
+        "Symptoms of Rabies",
+        "Think I have Rabies",
+        "Treatment for Rabies",
+        "What to do for Rabies",
+        "dog bite",
+        "hydrophobia",
+        "rabies risk"
+      ],
+      "responses": [
+        "**Possible Condition:** Rabies\n\n**Suggested Treatment:** Immediate vaccination series post-bite.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Rabies. \n\n**Treatment:** Immediate vaccination series post-bite.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Rabies. \n\n**Remedy:** Immediate vaccination series post-bite.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "tetanus",
+      "patterns": [
+        "I have Tetanus",
+        "Symptoms of Tetanus",
+        "Think I have Tetanus",
+        "Treatment for Tetanus",
+        "What to do for Tetanus",
+        "lockjaw",
+        "muscle spasms",
+        "rusty nail"
+      ],
+      "responses": [
+        "**Possible Condition:** Tetanus\n\n**Suggested Treatment:** Tetanus shot/booster.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Tetanus. \n\n**Treatment:** Tetanus shot/booster.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Tetanus. \n\n**Remedy:** Tetanus shot/booster.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "lyme_disease",
+      "patterns": [
+        "I have Lyme Disease",
+        "Symptoms of Lyme Disease",
+        "Think I have Lyme Disease",
+        "Treatment for Lyme Disease",
+        "What to do for Lyme Disease",
+        "tick bite",
+        "bullseye rash",
+        "lyme"
+      ],
+      "responses": [
+        "**Possible Condition:** Lyme Disease\n\n**Suggested Treatment:** Antibiotics.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Lyme Disease. \n\n**Treatment:** Antibiotics.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Lyme Disease. \n\n**Remedy:** Antibiotics.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hiv",
+      "patterns": [
+        "I have HIV",
+        "Symptoms of HIV",
+        "Think I have HIV",
+        "Treatment for HIV",
+        "What to do for HIV",
+        "hiv test",
+        "aids symptoms",
+        "immunodeficiency"
+      ],
+      "responses": [
+        "**Possible Condition:** HIV\n\n**Suggested Treatment:** Antiretroviral therapy (ART).\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be HIV. \n\n**Treatment:** Antiretroviral therapy (ART).\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing HIV. \n\n**Remedy:** Antiretroviral therapy (ART).\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "gonorrhea",
+      "patterns": [
+        "I have Gonorrhea",
+        "Symptoms of Gonorrhea",
+        "Think I have Gonorrhea",
+        "Treatment for Gonorrhea",
+        "What to do for Gonorrhea",
+        "std drip",
+        "gonorrhea",
+        "clap"
+      ],
+      "responses": [
+        "**Possible Condition:** Gonorrhea\n\n**Suggested Treatment:** Antibiotics.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Gonorrhea. \n\n**Treatment:** Antibiotics.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Gonorrhea. \n\n**Remedy:** Antibiotics.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "syphilis",
+      "patterns": [
+        "I have Syphilis",
+        "Symptoms of Syphilis",
+        "Think I have Syphilis",
+        "Treatment for Syphilis",
+        "What to do for Syphilis",
+        "chancre",
+        "syphilis rash",
+        "std sore"
+      ],
+      "responses": [
+        "**Possible Condition:** Syphilis\n\n**Suggested Treatment:** Penicillin.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Syphilis. \n\n**Treatment:** Penicillin.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Syphilis. \n\n**Remedy:** Penicillin.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "chlamydia",
+      "patterns": [
+        "I have Chlamydia",
+        "Symptoms of Chlamydia",
+        "Think I have Chlamydia",
+        "Treatment for Chlamydia",
+        "What to do for Chlamydia",
+        "silent std",
+        "chlamydia",
+        "std pain"
+      ],
+      "responses": [
+        "**Possible Condition:** Chlamydia\n\n**Suggested Treatment:** Antibiotics.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Chlamydia. \n\n**Treatment:** Antibiotics.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Chlamydia. \n\n**Remedy:** Antibiotics.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "herpes",
+      "patterns": [
+        "I have Herpes",
+        "Symptoms of Herpes",
+        "Think I have Herpes",
+        "Treatment for Herpes",
+        "What to do for Herpes",
+        "cold sore",
+        "genital blister",
+        "herpes"
+      ],
+      "responses": [
+        "**Possible Condition:** Herpes\n\n**Suggested Treatment:** Antiviral medication.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Herpes. \n\n**Treatment:** Antiviral medication.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Herpes. \n\n**Remedy:** Antiviral medication.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hpv",
+      "patterns": [
+        "I have HPV",
+        "Symptoms of HPV",
+        "Think I have HPV",
+        "Treatment for HPV",
+        "What to do for HPV",
+        "warts",
+        "hpv virus",
+        "pap smear"
+      ],
+      "responses": [
+        "**Possible Condition:** HPV\n\n**Suggested Treatment:** Vaccination and monitoring.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be HPV. \n\n**Treatment:** Vaccination and monitoring.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing HPV. \n\n**Remedy:** Vaccination and monitoring.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "scorpion_sting",
+      "patterns": [
+        "I have Scorpion Sting",
+        "Symptoms of Scorpion Sting",
+        "Think I have Scorpion Sting",
+        "Treatment for Scorpion Sting",
+        "What to do for Scorpion Sting",
+        "scorpion bite",
+        "sting pain",
+        "venom"
+      ],
+      "responses": [
+        "**Possible Condition:** Scorpion Sting\n\n**Suggested Treatment:** Ice, pain relief. Medical help if systemic.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Scorpion Sting. \n\n**Treatment:** Ice, pain relief. Medical help if systemic.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Scorpion Sting. \n\n**Remedy:** Ice, pain relief. Medical help if systemic.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "snake_bite",
+      "patterns": [
+        "I have Snake Bite",
+        "Symptoms of Snake Bite",
+        "Think I have Snake Bite",
+        "Treatment for Snake Bite",
+        "What to do for Snake Bite",
+        "venomous bite",
+        "snake bite",
+        "fang marks"
+      ],
+      "responses": [
+        "**Possible Condition:** Snake Bite\n\n**Suggested Treatment:** Immobilize limb. Hospital IMMEDIATELY.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Snake Bite. \n\n**Treatment:** Immobilize limb. Hospital IMMEDIATELY.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Snake Bite. \n\n**Remedy:** Immobilize limb. Hospital IMMEDIATELY.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "bee_sting",
+      "patterns": [
+        "I have Bee Sting",
+        "Symptoms of Bee Sting",
+        "Think I have Bee Sting",
+        "Treatment for Bee Sting",
+        "What to do for Bee Sting",
+        "bee sting allergy",
+        "wasp sting",
+        "sting swollen"
+      ],
+      "responses": [
+        "**Possible Condition:** Bee Sting\n\n**Suggested Treatment:** Remove stinger. Ice. Epipen if allergic.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Bee Sting. \n\n**Treatment:** Remove stinger. Ice. Epipen if allergic.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Bee Sting. \n\n**Remedy:** Remove stinger. Ice. Epipen if allergic.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "spider_bite",
+      "patterns": [
+        "I have Spider Bite",
+        "Symptoms of Spider Bite",
+        "Think I have Spider Bite",
+        "Treatment for Spider Bite",
+        "What to do for Spider Bite",
+        "spider venom",
+        "recluse bite",
+        "spider redness"
+      ],
+      "responses": [
+        "**Possible Condition:** Spider Bite\n\n**Suggested Treatment:** Clean wound. Watch for necrosis.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Spider Bite. \n\n**Treatment:** Clean wound. Watch for necrosis.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Spider Bite. \n\n**Remedy:** Clean wound. Watch for necrosis.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "jellyfish_sting",
+      "patterns": [
+        "I have Jellyfish Sting",
+        "Symptoms of Jellyfish Sting",
+        "Think I have Jellyfish Sting",
+        "Treatment for Jellyfish Sting",
+        "What to do for Jellyfish Sting",
+        "jellyfish burn",
+        "ocean sting",
+        "tentacle sting"
+      ],
+      "responses": [
+        "**Possible Condition:** Jellyfish Sting\n\n**Suggested Treatment:** Vinegar rinse (for some). Hot water immersion.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Jellyfish Sting. \n\n**Treatment:** Vinegar rinse (for some). Hot water immersion.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Jellyfish Sting. \n\n**Remedy:** Vinegar rinse (for some). Hot water immersion.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "altitude_sickness",
+      "patterns": [
+        "I have Altitude Sickness",
+        "Symptoms of Altitude Sickness",
+        "Think I have Altitude Sickness",
+        "Treatment for Altitude Sickness",
+        "What to do for Altitude Sickness",
+        "mountain sickness",
+        "oxygen lack",
+        "altitude headache"
+      ],
+      "responses": [
+        "**Possible Condition:** Altitude Sickness\n\n**Suggested Treatment:** Descend immediately. Oxygen.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Altitude Sickness. \n\n**Treatment:** Descend immediately. Oxygen.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Altitude Sickness. \n\n**Remedy:** Descend immediately. Oxygen.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hypothermia",
+      "patterns": [
+        "I have Hypothermia",
+        "Symptoms of Hypothermia",
+        "Think I have Hypothermia",
+        "Treatment for Hypothermia",
+        "What to do for Hypothermia",
+        "freezing cold",
+        "shivering stop",
+        "hypothermia"
+      ],
+      "responses": [
+        "**Possible Condition:** Hypothermia\n\n**Suggested Treatment:** Warm slowly. Dry clothes.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hypothermia. \n\n**Treatment:** Warm slowly. Dry clothes.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hypothermia. \n\n**Remedy:** Warm slowly. Dry clothes.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "frostbite",
+      "patterns": [
+        "I have Frostbite",
+        "Symptoms of Frostbite",
+        "Think I have Frostbite",
+        "Treatment for Frostbite",
+        "What to do for Frostbite",
+        "frozen fingers",
+        "black toes",
+        "frostbite"
+      ],
+      "responses": [
+        "**Possible Condition:** Frostbite\n\n**Suggested Treatment:** Warm water rewarming. Do not rub.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Frostbite. \n\n**Treatment:** Warm water rewarming. Do not rub.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Frostbite. \n\n**Remedy:** Warm water rewarming. Do not rub.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "choking",
+      "patterns": [
+        "I have Choking",
+        "Symptoms of Choking",
+        "Think I have Choking",
+        "Treatment for Choking",
+        "What to do for Choking",
+        "can't speak",
+        "choking sign",
+        "food stuck"
+      ],
+      "responses": [
+        "**Possible Condition:** Choking\n\n**Suggested Treatment:** Heimlich maneuver.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Choking. \n\n**Treatment:** Heimlich maneuver.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Choking. \n\n**Remedy:** Heimlich maneuver.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "cpr",
+      "patterns": [
+        "I have CPR",
+        "Symptoms of CPR",
+        "Think I have CPR",
+        "Treatment for CPR",
+        "What to do for CPR",
+        "no pulse",
+        "cardiac arrest",
+        "cpr needed"
+      ],
+      "responses": [
+        "**Possible Condition:** CPR\n\n**Suggested Treatment:** Start chest compressions. Call 911.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be CPR. \n\n**Treatment:** Start chest compressions. Call 911.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing CPR. \n\n**Remedy:** Start chest compressions. Call 911.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "drowning",
+      "patterns": [
+        "I have Drowning",
+        "Symptoms of Drowning",
+        "Think I have Drowning",
+        "Treatment for Drowning",
+        "What to do for Drowning",
+        "water lung",
+        "near drowning",
+        "swallowed water"
+      ],
+      "responses": [
+        "**Possible Condition:** Drowning\n\n**Suggested Treatment:** Rescue breathing. Hospital checkup.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Drowning. \n\n**Treatment:** Rescue breathing. Hospital checkup.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Drowning. \n\n**Remedy:** Rescue breathing. Hospital checkup.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "electric_shock",
+      "patterns": [
+        "I have Electric Shock",
+        "Symptoms of Electric Shock",
+        "Think I have Electric Shock",
+        "Treatment for Electric Shock",
+        "What to do for Electric Shock",
+        "electrocution",
+        "shock burn",
+        "live wire"
+      ],
+      "responses": [
+        "**Possible Condition:** Electric Shock\n\n**Suggested Treatment:** Turn off power. CPR if needed.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Electric Shock. \n\n**Treatment:** Turn off power. CPR if needed.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Electric Shock. \n\n**Remedy:** Turn off power. CPR if needed.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "poisoning",
+      "patterns": [
+        "I have Poisoning",
+        "Symptoms of Poisoning",
+        "Think I have Poisoning",
+        "Treatment for Poisoning",
+        "What to do for Poisoning",
+        "swallowed bleach",
+        "poison",
+        "toxic ingestion"
+      ],
+      "responses": [
+        "**Possible Condition:** Poisoning\n\n**Suggested Treatment:** Call Poison Control immediately.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Poisoning. \n\n**Treatment:** Call Poison Control immediately.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Poisoning. \n\n**Remedy:** Call Poison Control immediately.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "nosebleed",
+      "patterns": [
+        "I have Nosebleed",
+        "Symptoms of Nosebleed",
+        "Think I have Nosebleed",
+        "Treatment for Nosebleed",
+        "What to do for Nosebleed",
+        "bleeding nose",
+        "epistaxis",
+        "nose blood"
+      ],
+      "responses": [
+        "**Possible Condition:** Nosebleed\n\n**Suggested Treatment:** Pinch soft part of nose, lean forward.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Nosebleed. \n\n**Treatment:** Pinch soft part of nose, lean forward.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Nosebleed. \n\n**Remedy:** Pinch soft part of nose, lean forward.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "faps",
+      "patterns": [
+        "I have Faps",
+        "Symptoms of Faps",
+        "Think I have Faps",
+        "Treatment for Faps",
+        "What to do for Faps",
+        "fainting",
+        "passed out",
+        "syncope"
+      ],
+      "responses": [
+        "**Possible Condition:** Faps\n\n**Suggested Treatment:** Legs up. Fresh air.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Faps. \n\n**Treatment:** Legs up. Fresh air.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Faps. \n\n**Remedy:** Legs up. Fresh air.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "shock",
+      "patterns": [
+        "I have Shock",
+        "Symptoms of Shock",
+        "Think I have Shock",
+        "Treatment for Shock",
+        "What to do for Shock",
+        "pale clammy",
+        "in shock",
+        "medical shock"
+      ],
+      "responses": [
+        "**Possible Condition:** Shock\n\n**Suggested Treatment:** Lay down, feet up, keep warm.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Shock. \n\n**Treatment:** Lay down, feet up, keep warm.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Shock. \n\n**Remedy:** Lay down, feet up, keep warm.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "concussion",
+      "patterns": [
+        "I have Concussion",
+        "Symptoms of Concussion",
+        "Think I have Concussion",
+        "Treatment for Concussion",
+        "What to do for Concussion",
+        "hit head",
+        "seeing stars",
+        "concussion"
+      ],
+      "responses": [
+        "**Possible Condition:** Concussion\n\n**Suggested Treatment:** Rest physically and mentally. Monitor.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Concussion. \n\n**Treatment:** Rest physically and mentally. Monitor.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Concussion. \n\n**Remedy:** Rest physically and mentally. Monitor.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "whiplash",
+      "patterns": [
+        "I have Whiplash",
+        "Symptoms of Whiplash",
+        "Think I have Whiplash",
+        "Treatment for Whiplash",
+        "What to do for Whiplash",
+        "neck snap",
+        "car accident neck",
+        "whiplash"
+      ],
+      "responses": [
+        "**Possible Condition:** Whiplash\n\n**Suggested Treatment:** Ice, rest, gentle movement.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Whiplash. \n\n**Treatment:** Ice, rest, gentle movement.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Whiplash. \n\n**Remedy:** Ice, rest, gentle movement.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "motion_sickness",
+      "patterns": [
+        "I have Motion Sickness",
+        "Symptoms of Motion Sickness",
+        "Think I have Motion Sickness",
+        "Treatment for Motion Sickness",
+        "What to do for Motion Sickness",
+        "car sick",
+        "sea sick",
+        "motion nausea"
+      ],
+      "responses": [
+        "**Possible Condition:** Motion Sickness\n\n**Suggested Treatment:** Look at horizon. Ginger. Meds.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Motion Sickness. \n\n**Treatment:** Look at horizon. Ginger. Meds.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Motion Sickness. \n\n**Remedy:** Look at horizon. Ginger. Meds.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "jet_lag",
+      "patterns": [
+        "I have Jet Lag",
+        "Symptoms of Jet Lag",
+        "Think I have Jet Lag",
+        "Treatment for Jet Lag",
+        "What to do for Jet Lag",
+        "time zone tired",
+        "jet lag",
+        "sleep cycle"
+      ],
+      "responses": [
+        "**Possible Condition:** Jet Lag\n\n**Suggested Treatment:** Sunlight exposure. Melatonin.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Jet Lag. \n\n**Treatment:** Sunlight exposure. Melatonin.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Jet Lag. \n\n**Remedy:** Sunlight exposure. Melatonin.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "hangover",
+      "patterns": [
+        "I have Hangover",
+        "Symptoms of Hangover",
+        "Think I have Hangover",
+        "Treatment for Hangover",
+        "What to do for Hangover",
+        "drank too much",
+        "hangover headache",
+        "alcohol sick"
+      ],
+      "responses": [
+        "**Possible Condition:** Hangover\n\n**Suggested Treatment:** Fluids, electrolytes, sleep.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Hangover. \n\n**Treatment:** Fluids, electrolytes, sleep.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Hangover. \n\n**Remedy:** Fluids, electrolytes, sleep.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "vitamin_d_deficiency",
+      "patterns": [
+        "I have Vitamin D Deficiency",
+        "Symptoms of Vitamin D Deficiency",
+        "Think I have Vitamin D Deficiency",
+        "Treatment for Vitamin D Deficiency",
+        "What to do for Vitamin D Deficiency",
+        "low vit d",
+        "bone pain",
+        "fatigue"
+      ],
+      "responses": [
+        "**Possible Condition:** Vitamin D Deficiency\n\n**Suggested Treatment:** Sunlight, supplements.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Vitamin D Deficiency. \n\n**Treatment:** Sunlight, supplements.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Vitamin D Deficiency. \n\n**Remedy:** Sunlight, supplements.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "vitamin_b12_deficiency",
+      "patterns": [
+        "I have Vitamin B12 Deficiency",
+        "Symptoms of Vitamin B12 Deficiency",
+        "Think I have Vitamin B12 Deficiency",
+        "Treatment for Vitamin B12 Deficiency",
+        "What to do for Vitamin B12 Deficiency",
+        "nerve pain",
+        "b12 low",
+        "anemia b12"
+      ],
+      "responses": [
+        "**Possible Condition:** Vitamin B12 Deficiency\n\n**Suggested Treatment:** Supplements or injections.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Vitamin B12 Deficiency. \n\n**Treatment:** Supplements or injections.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Vitamin B12 Deficiency. \n\n**Remedy:** Supplements or injections.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "calcium_deficiency",
+      "patterns": [
+        "I have Calcium Deficiency",
+        "Symptoms of Calcium Deficiency",
+        "Think I have Calcium Deficiency",
+        "Treatment for Calcium Deficiency",
+        "What to do for Calcium Deficiency",
+        "muscle cramps",
+        "low calcium",
+        "hypocalcemia"
+      ],
+      "responses": [
+        "**Possible Condition:** Calcium Deficiency\n\n**Suggested Treatment:** Dairy, leafy greens, supplements.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Calcium Deficiency. \n\n**Treatment:** Dairy, leafy greens, supplements.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Calcium Deficiency. \n\n**Remedy:** Dairy, leafy greens, supplements.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "iron_deficiency",
+      "patterns": [
+        "I have Iron Deficiency",
+        "Symptoms of Iron Deficiency",
+        "Think I have Iron Deficiency",
+        "Treatment for Iron Deficiency",
+        "What to do for Iron Deficiency",
+        "pale",
+        "eating ice",
+        "low iron"
+      ],
+      "responses": [
+        "**Possible Condition:** Iron Deficiency\n\n**Suggested Treatment:** Iron supplements, meat.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Iron Deficiency. \n\n**Treatment:** Iron supplements, meat.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Iron Deficiency. \n\n**Remedy:** Iron supplements, meat.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "magnesium_deficiency",
+      "patterns": [
+        "I have Magnesium Deficiency",
+        "Symptoms of Magnesium Deficiency",
+        "Think I have Magnesium Deficiency",
+        "Treatment for Magnesium Deficiency",
+        "What to do for Magnesium Deficiency",
+        "twitching",
+        "muscle spasm",
+        "low mag"
+      ],
+      "responses": [
+        "**Possible Condition:** Magnesium Deficiency\n\n**Suggested Treatment:** Nuts, seeds, supplements.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Magnesium Deficiency. \n\n**Treatment:** Nuts, seeds, supplements.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Magnesium Deficiency. \n\n**Remedy:** Nuts, seeds, supplements.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "protein_deficiency",
+      "patterns": [
+        "I have Protein Deficiency",
+        "Symptoms of Protein Deficiency",
+        "Think I have Protein Deficiency",
+        "Treatment for Protein Deficiency",
+        "What to do for Protein Deficiency",
+        "kwashiorkor",
+        "muscle wasting",
+        "low protein"
+      ],
+      "responses": [
+        "**Possible Condition:** Protein Deficiency\n\n**Suggested Treatment:** High protein diet.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Protein Deficiency. \n\n**Treatment:** High protein diet.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Protein Deficiency. \n\n**Remedy:** High protein diet.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "scurvy",
+      "patterns": [
+        "I have Scurvy",
+        "Symptoms of Scurvy",
+        "Think I have Scurvy",
+        "Treatment for Scurvy",
+        "What to do for Scurvy",
+        "bleeding gums vit c",
+        "scurvy",
+        "vitamin c low"
+      ],
+      "responses": [
+        "**Possible Condition:** Scurvy\n\n**Suggested Treatment:** Citrus fruits.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Scurvy. \n\n**Treatment:** Citrus fruits.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Scurvy. \n\n**Remedy:** Citrus fruits.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "rickets",
+      "patterns": [
+        "I have Rickets",
+        "Symptoms of Rickets",
+        "Think I have Rickets",
+        "Treatment for Rickets",
+        "What to do for Rickets",
+        "bowed legs",
+        "soft bones",
+        "rickets"
+      ],
+      "responses": [
+        "**Possible Condition:** Rickets\n\n**Suggested Treatment:** Vitamin D and Calcium.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Rickets. \n\n**Treatment:** Vitamin D and Calcium.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Rickets. \n\n**Remedy:** Vitamin D and Calcium.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "night_blindness",
+      "patterns": [
+        "I have Night Blindness",
+        "Symptoms of Night Blindness",
+        "Think I have Night Blindness",
+        "Treatment for Night Blindness",
+        "What to do for Night Blindness",
+        "cant see night",
+        "vit a low",
+        "night blind"
+      ],
+      "responses": [
+        "**Possible Condition:** Night Blindness\n\n**Suggested Treatment:** Vitamin A sources.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Night Blindness. \n\n**Treatment:** Vitamin A sources.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Night Blindness. \n\n**Remedy:** Vitamin A sources.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "beriberi",
+      "patterns": [
+        "I have Beriberi",
+        "Symptoms of Beriberi",
+        "Think I have Beriberi",
+        "Treatment for Beriberi",
+        "What to do for Beriberi",
+        "thiamine low",
+        "beriberi",
+        "vit b1"
+      ],
+      "responses": [
+        "**Possible Condition:** Beriberi\n\n**Suggested Treatment:** Whole grains, supplements.\n\n**Note:** These are home remedies. If symptoms persist or get worse, we strongly suggest you consult a doctor for a proper check-up.",
+        "Based on your symptoms, it could be Beriberi. \n\n**Treatment:** Whole grains, supplements.\n\n**Advice:** Please visit a doctor if this does not improve within 24 hours.",
+        "It sounds like you might be experiencing Beriberi. \n\n**Remedy:** Whole grains, supplements.\n\n**Medical Advice:** If the condition is severe or does not subside, please see a specialist immediately."
+      ]
+    },
+    {
+      "tag": "pain_head",
+      "patterns": [
+        "Pain in Head",
+        "My Head hurts",
+        "Head injury",
+        "Sore Head"
+      ],
+      "responses": [
+        "Pain in the Head can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Head pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_neck",
+      "patterns": [
+        "Pain in Neck",
+        "My Neck hurts",
+        "Neck injury",
+        "Sore Neck"
+      ],
+      "responses": [
+        "Pain in the Neck can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Neck pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_shoulder",
+      "patterns": [
+        "Pain in Shoulder",
+        "My Shoulder hurts",
+        "Shoulder injury",
+        "Sore Shoulder"
+      ],
+      "responses": [
+        "Pain in the Shoulder can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Shoulder pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_arm",
+      "patterns": [
+        "Pain in Arm",
+        "My Arm hurts",
+        "Arm injury",
+        "Sore Arm"
+      ],
+      "responses": [
+        "Pain in the Arm can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Arm pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_elbow",
+      "patterns": [
+        "Pain in Elbow",
+        "My Elbow hurts",
+        "Elbow injury",
+        "Sore Elbow"
+      ],
+      "responses": [
+        "Pain in the Elbow can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Elbow pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_wrist",
+      "patterns": [
+        "Pain in Wrist",
+        "My Wrist hurts",
+        "Wrist injury",
+        "Sore Wrist"
+      ],
+      "responses": [
+        "Pain in the Wrist can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Wrist pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_hand",
+      "patterns": [
+        "Pain in Hand",
+        "My Hand hurts",
+        "Hand injury",
+        "Sore Hand"
+      ],
+      "responses": [
+        "Pain in the Hand can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Hand pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_finger",
+      "patterns": [
+        "Pain in Finger",
+        "My Finger hurts",
+        "Finger injury",
+        "Sore Finger"
+      ],
+      "responses": [
+        "Pain in the Finger can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Finger pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_thumb",
+      "patterns": [
+        "Pain in Thumb",
+        "My Thumb hurts",
+        "Thumb injury",
+        "Sore Thumb"
+      ],
+      "responses": [
+        "Pain in the Thumb can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Thumb pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_chest",
+      "patterns": [
+        "Pain in Chest",
+        "My Chest hurts",
+        "Chest injury",
+        "Sore Chest"
+      ],
+      "responses": [
+        "Pain in the Chest can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Chest pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_rib",
+      "patterns": [
+        "Pain in Rib",
+        "My Rib hurts",
+        "Rib injury",
+        "Sore Rib"
+      ],
+      "responses": [
+        "Pain in the Rib can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Rib pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_stomach",
+      "patterns": [
+        "Pain in Stomach",
+        "My Stomach hurts",
+        "Stomach injury",
+        "Sore Stomach"
+      ],
+      "responses": [
+        "Pain in the Stomach can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Stomach pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_abdomen",
+      "patterns": [
+        "Pain in Abdomen",
+        "My Abdomen hurts",
+        "Abdomen injury",
+        "Sore Abdomen"
+      ],
+      "responses": [
+        "Pain in the Abdomen can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Abdomen pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_back",
+      "patterns": [
+        "Pain in Back",
+        "My Back hurts",
+        "Back injury",
+        "Sore Back"
+      ],
+      "responses": [
+        "Pain in the Back can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Back pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_spine",
+      "patterns": [
+        "Pain in Spine",
+        "My Spine hurts",
+        "Spine injury",
+        "Sore Spine"
+      ],
+      "responses": [
+        "Pain in the Spine can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Spine pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_hip",
+      "patterns": [
+        "Pain in Hip",
+        "My Hip hurts",
+        "Hip injury",
+        "Sore Hip"
+      ],
+      "responses": [
+        "Pain in the Hip can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Hip pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_pelvis",
+      "patterns": [
+        "Pain in Pelvis",
+        "My Pelvis hurts",
+        "Pelvis injury",
+        "Sore Pelvis"
+      ],
+      "responses": [
+        "Pain in the Pelvis can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Pelvis pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_buttock",
+      "patterns": [
+        "Pain in Buttock",
+        "My Buttock hurts",
+        "Buttock injury",
+        "Sore Buttock"
+      ],
+      "responses": [
+        "Pain in the Buttock can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Buttock pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_leg",
+      "patterns": [
+        "Pain in Leg",
+        "My Leg hurts",
+        "Leg injury",
+        "Sore Leg"
+      ],
+      "responses": [
+        "Pain in the Leg can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Leg pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_thigh",
+      "patterns": [
+        "Pain in Thigh",
+        "My Thigh hurts",
+        "Thigh injury",
+        "Sore Thigh"
+      ],
+      "responses": [
+        "Pain in the Thigh can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Thigh pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_knee",
+      "patterns": [
+        "Pain in Knee",
+        "My Knee hurts",
+        "Knee injury",
+        "Sore Knee"
+      ],
+      "responses": [
+        "Pain in the Knee can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Knee pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_calf",
+      "patterns": [
+        "Pain in Calf",
+        "My Calf hurts",
+        "Calf injury",
+        "Sore Calf"
+      ],
+      "responses": [
+        "Pain in the Calf can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Calf pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_ankle",
+      "patterns": [
+        "Pain in Ankle",
+        "My Ankle hurts",
+        "Ankle injury",
+        "Sore Ankle"
+      ],
+      "responses": [
+        "Pain in the Ankle can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Ankle pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_foot",
+      "patterns": [
+        "Pain in Foot",
+        "My Foot hurts",
+        "Foot injury",
+        "Sore Foot"
+      ],
+      "responses": [
+        "Pain in the Foot can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Foot pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_toe",
+      "patterns": [
+        "Pain in Toe",
+        "My Toe hurts",
+        "Toe injury",
+        "Sore Toe"
+      ],
+      "responses": [
+        "Pain in the Toe can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Toe pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_heel",
+      "patterns": [
+        "Pain in Heel",
+        "My Heel hurts",
+        "Heel injury",
+        "Sore Heel"
+      ],
+      "responses": [
+        "Pain in the Heel can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Heel pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_jaw",
+      "patterns": [
+        "Pain in Jaw",
+        "My Jaw hurts",
+        "Jaw injury",
+        "Sore Jaw"
+      ],
+      "responses": [
+        "Pain in the Jaw can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Jaw pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_tooth",
+      "patterns": [
+        "Pain in Tooth",
+        "My Tooth hurts",
+        "Tooth injury",
+        "Sore Tooth"
+      ],
+      "responses": [
+        "Pain in the Tooth can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Tooth pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_gum",
+      "patterns": [
+        "Pain in Gum",
+        "My Gum hurts",
+        "Gum injury",
+        "Sore Gum"
+      ],
+      "responses": [
+        "Pain in the Gum can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Gum pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_tongue",
+      "patterns": [
+        "Pain in Tongue",
+        "My Tongue hurts",
+        "Tongue injury",
+        "Sore Tongue"
+      ],
+      "responses": [
+        "Pain in the Tongue can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Tongue pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_throat",
+      "patterns": [
+        "Pain in Throat",
+        "My Throat hurts",
+        "Throat injury",
+        "Sore Throat"
+      ],
+      "responses": [
+        "Pain in the Throat can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Throat pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_ear",
+      "patterns": [
+        "Pain in Ear",
+        "My Ear hurts",
+        "Ear injury",
+        "Sore Ear"
+      ],
+      "responses": [
+        "Pain in the Ear can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Ear pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_eye",
+      "patterns": [
+        "Pain in Eye",
+        "My Eye hurts",
+        "Eye injury",
+        "Sore Eye"
+      ],
+      "responses": [
+        "Pain in the Eye can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Eye pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_nose",
+      "patterns": [
+        "Pain in Nose",
+        "My Nose hurts",
+        "Nose injury",
+        "Sore Nose"
+      ],
+      "responses": [
+        "Pain in the Nose can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Nose pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_forehead",
+      "patterns": [
+        "Pain in Forehead",
+        "My Forehead hurts",
+        "Forehead injury",
+        "Sore Forehead"
+      ],
+      "responses": [
+        "Pain in the Forehead can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Forehead pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_cheek",
+      "patterns": [
+        "Pain in Cheek",
+        "My Cheek hurts",
+        "Cheek injury",
+        "Sore Cheek"
+      ],
+      "responses": [
+        "Pain in the Cheek can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Cheek pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_chin",
+      "patterns": [
+        "Pain in Chin",
+        "My Chin hurts",
+        "Chin injury",
+        "Sore Chin"
+      ],
+      "responses": [
+        "Pain in the Chin can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Chin pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_skin",
+      "patterns": [
+        "Pain in Skin",
+        "My Skin hurts",
+        "Skin injury",
+        "Sore Skin"
+      ],
+      "responses": [
+        "Pain in the Skin can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Skin pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_hair",
+      "patterns": [
+        "Pain in Hair",
+        "My Hair hurts",
+        "Hair injury",
+        "Sore Hair"
+      ],
+      "responses": [
+        "Pain in the Hair can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Hair pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    },
+    {
+      "tag": "pain_nail",
+      "patterns": [
+        "Pain in Nail",
+        "My Nail hurts",
+        "Nail injury",
+        "Sore Nail"
+      ],
+      "responses": [
+        "Pain in the Nail can be due to strain or injury. Rest and monitor. If severe, see a doctor.",
+        "For Nail pain, try applying a cold or warm compress depending on the type of injury."
+      ]
+    }
+  ]
+}

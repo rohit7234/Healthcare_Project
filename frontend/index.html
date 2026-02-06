@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>HealthBot AI</span>
+            </div>
+
+            <button class="new-chat-btn" onclick="startNewChat()">
+                <i class="fa-solid fa-plus"></i> New Chat
+            </button>
+
+            <div class="history-list" id="history-list">
+                <!-- History items will be injected here -->
+            </div>
+
+            <div class="sidebar-footer">
+                <button class="delete-history-btn" onclick="clearAllHistory()">
+                    <i class="fa-solid fa-trash"></i> Clear All History
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- 3D Avatar Container -->
+            <div class="avatar-container" id="avatar-container"></div>
+
+            <!-- Welcome Screen (Shown when chat is empty) -->
+            <div class="welcome-container" id="welcome-container">
+                <h1>Describe your symptoms to<br><span>HealthBot AI</span></h1>
+                <div class="suggestion-grid">
+                    <div class="card" onclick="setInput('I have a severe headache')">
+                        <i class="fa-solid fa-brain"></i>
+                        <p>Severe Headache</p>
+                    </div>
+                    <div class="card" onclick="setInput('Symptoms of Flu')">
+                        <i class="fa-solid fa-virus"></i>
+                        <p>Flu Symptoms</p>
+                    </div>
+                    <div class="card" onclick="setInput('I feel anxious and panicked')">
+                        <i class="fa-solid fa-person-breastfeeding"></i>
+                        <p>Anxiety Help</p>
+                    </div>
+                    <div class="card" onclick="setInput('First aid for burns')">
+                        <i class="fa-solid fa-kit-medical"></i>
+                        <p>Burn First Aid</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-wrapper" id="chat-wrapper" style="display: none;">
+                <div class="chat-box" id="chat-box">
+                    <!-- Messages -->
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="user-input" placeholder="Describe your symptoms..." rows="1"></textarea>
+                    <button onclick="sendMessage()" id="send-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="disclaimer">
+                    AI can make mistakes. Always consult a doctor for serious issues.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">Confirm Action</h3>
+            <p id="modal-desc">Are you sure?</p>
+            <div class="modal-actions">
+                <button id="modal-cancel">Cancel</button>
+                <button id="modal-confirm" class="danger">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
